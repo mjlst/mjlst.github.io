@@ -1,0 +1,804 @@
+	<!DOCTYPE html>
+<html>
+<!-- Oh, hey, hello! You're now on the backstage of Minjong's website, WELCOME! :) 
+If you are looking for someone who is passionate about designing, making and building, you're on the right place.
+Please enjoy! -->
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<title>Minjong Lee, UX Designer</title>
+	<link rel="icon" type="image/png" href="./general/favicon.png">
+	<link href='https://fonts.googleapis.com/css?family=Oswald|Roboto:400,300' rel='stylesheet' type='text/css'>
+	<!-- Meta Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css">
+	<!-- Master stylesheet -->
+	<link rel="stylesheet" href="./stylesheet/global.css">
+	<link rel="stylesheet" href="./stylesheet/page.css">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-49851605-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<!-- Project timeline styling 1/4-->
+	<style>
+	.package {
+	position: relative;
+	width: 900px;
+	margin: 0 auto;
+	}
+	.stacks, .bars {
+	stroke-width: 1;
+	stroke: #73777d;
+	shape-rendering: crispEdges;
+	rx: 2;
+	ry: 2;
+	}
+	.tips {
+	font-family: Roboto;
+	font-size: .7em;
+	line-height: 1.5em;
+	border-radius: 4px;
+	background-color: #56595e;
+	position: absolute;
+	color: #fff;
+	width: 140px;
+	height: 60px;
+	padding: 10px;
+	}
+	.tips:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #56595e;
+	border-width: 5px;
+	margin-left: -5px;
+	}
+	.taps {
+	font-family: Roboto;
+	font-size: .7em;
+	line-height: 1.5em;
+	border-radius: 4px;
+	background-color: #56595e;
+	position: absolute;
+	color: #fff;
+	width: 140px;
+	padding: 10px;
+	}
+	.taps:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #56595e;
+	border-width: 5px;
+	margin-top: -5px;
+	}
+	.button {
+	width: 140px;
+	padding: 8px;
+	height: 20px;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 1.1em;
+	border-radius: 4px;
+	text-align: center;
+	position: relative;
+	margin: 4px;
+	display: inline-block;
+	margin-top: 30px;
+	border: 1px solid #fff;
+	color: #666;
+	text-shadow: 1px 1px #fff, 
+		-1px -1px #fff;
+	transform: translate(0px, 0px);
+	box-shadow: 0px 0px 0px 1px #b3b3b3,
+		0px 1px 0px 1px #ddd,
+		0px 2px 0px 1px #b3b3b3;
+	background-image: -webkit-linear-gradient(180deg, #fefefe, #eeeeee); /* For Safari 5.1 to 6.0 */
+	background-image: -o-linear-gradient(180deg, #fefefe, #eeeeee); /* For Opera 11.1 to 12.0 */
+	background-image: -moz-linear-gradient(180deg,  #fefefe, #eeeeee); /* For Firefox 3.6 to 15 */
+	background-image: linear-gradient(180deg,  #fefefe, #eeeeee); /* Standard syntax */
+	}
+	.inactive:hover {
+	text-shadow: 1px 1px #fff, 
+		-1px -1px #fff;
+	transform: translate(0px,-1px);
+	box-shadow: 0px 0px 0px 1px #b3b3b3,
+		0px 2px 0px 1px #ddd,
+		0px 3px 0px 1px #b3b3b3;
+	background-image: -webkit-linear-gradient(180deg, #fefefe, #eeeeee); /* For Safari 5.1 to 6.0 */
+	background-image: -o-linear-gradient(180deg, #fefefe, #eeeeee); /* For Opera 11.1 to 12.0 */
+	background-image: -moz-linear-gradient(180deg,  #fefefe, #eeeeee); /* For Firefox 3.6 to 15 */
+	background-image: linear-gradient(180deg, #fefefe, #eeeeee); /* Standard syntax */
+	}
+
+	.inactive:active, .active {
+	border: 1px solid #ccc;
+	text-shadow: 1px 1px #fff, 
+		-1px -1px #eee;
+	transform: translate(0px,1px);
+	box-shadow: 0px 0px 0px 1px #b3b3b3,
+		0px -1px 0px 1px #b3b3b3,
+		inset 0px 0px 16px #ddd;
+	background-image: -webkit-linear-gradient(180deg, #eee, #ddd); /* For Safari 5.1 to 6.0 */
+	background-image: -o-linear-gradient(180deg, #eee, #ddd); /* For Opera 11.1 to 12.0 */
+	background-image: -moz-linear-gradient(180deg, #eee, #ddd); /* For Firefox 3.6 to 15 */
+	background-image: linear-gradient(180deg, #eee, #ddd); /* Standard syntax */
+	}
+
+	.lined {
+	fill: #f9f9f9;
+	stroke: #73777d;
+	shape-rendering: crispEdges;
+	}
+	.grid .tick {
+	stroke: rgba(115, 119, 125, 1);
+	stroke-opacity: 0.7;
+	shape-rendering: crispEdges;
+	stroke-width:1; 
+	stroke-dasharray: 2, 2;
+	}
+	.grid path {
+	stroke: rgba(115, 119, 125, 1);
+	stroke-width: 0;
+	}
+	.axis path,
+	.axis line {
+	fill: none;
+	stroke: #73777d;
+	shape-rendering: crispEdges;
+	}
+	.axis text {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: .8em;
+	fill:#73777d;
+	}
+	</style>
+<!-- Project timeline styling -->
+<!-- Link for exploration -->
+</head>
+<body>
+<header class="nav bged">
+	<div id="mobile-nav"><i class="fa fa-bars fa-2x"></i></div>
+	<h1 id="logo"><a href="index.html#ftr">Minjong Lee Portfolio</a></h1>
+	<ul class="nav-group">
+		<li><a href="./datavis/temperaturemap.html">See also : Data-Visualization&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+	</ul>
+</header>
+<section class="bg fff-bg flex">
+	<div class="box-int item flex">
+		<figure class="rm-int"></figure>
+		<div class="half-two-lft">
+			<h2>Rivermatters, marketing website for a museum</h2>
+			<p class="passage">RiverMatters is physical and digital city planning game that markets upcoming exhibition, H2Oh! Carnegie Science Center. RiverMatters enables students and visitors of Carnegie Science Center to explore and understand different needs of city departments and consequences of their action.</p>
+		</div>
+		<div class="half-two-rt item">
+		</div>
+	</div>
+</section>
+<section id="brief">
+	<div class="box">
+		<div class="clmn-three-lft">
+			<p class="description bold cntr">Project Timeline</p>
+			<p class="description cntr">Sep 2014 - Dec 2014</p>
+		</div>
+		<div class="clmn-three-cntr">
+			<p class="description bold cntr">Deliverable</p>
+			<p class="description cntr">Web Application (Client Side Dashboard)</p>
+			<p class="description cntr">Landing page</p>
+			<p class="description cntr">Online Game</p>
+			<p class="description cntr">Physical Board game</p>
+		</div>
+		<div class="clmn-three-rt">
+			<p class="description bold cntr">My Contribution</p>
+			<p class="description cntr">User Research</p>
+			<p class="description cntr">Wireframe & Prototyping</p>
+			<p class="description cntr">UI Design</p>
+			<p class="description cntr">Usability testing</p>
+			<p class="description cntr">Play testing</p>
+			<p class="description cntr">High Fidelity Mockup</p>
+		</div>
+	</div>
+</section>
+<hr>
+<section>
+	<h2 class="header">Understanding Clients' Needs</h2>
+	<p class="narrow passage">Our project started with having a conversation with our client, Carnegie Science Center. We met the staff members including the director, exhibition designer, and education initiatives. Our questions were formed to understand their mission and their target demographic. Broadly, Carnegie Science Center was looking for an experience which can market their upcoming exhibition H2Oh! for their main target demographic, middle School students, and general museum visitors. </p>
+</section>
+<!-- Project timeline html 2/4-->
+<section class="fff-bg" id="tmln">
+		<h2 class="header">Project Timeline &mdash; how we went through the design process?</h2>
+		<p class="narrow passage">After the conversation, we roughly planned out our process. Even though we went through 2 more design sprints and 4 more smaller design projects than we expected, this timeline guided us to track and validate our sprints. We also adjusted our timeline as we go to make sure we were designing for necessity.</p>
+		<p class="narrow passage">(Hover over on the bars to see detailed information.)</p>
+		<span class="button active" id="timeline">timeline</span>
+		<span class="button inactive" id="timesum">total time spent</span>
+	<div class="package">
+	</div>
+</section>
+<!-- Project timeline html 2/4-->
+<!-- 
+<section>
+	<div class="box">
+		<p class="accent">Engaging + Educating + Executable</p>
+	</div>
+</section>
+ -->
+<section class="fff-bg">
+	<h2 class="header">Target Demographic &mdash; Who are we designing for?</h2>
+	<p class="narrow passage">During our meetings, Staff members of Carnegie Science Center mentioned that their main visitors were school students and teachers who were coming for field trips. Also, school teachers were looking for class materials related to the museum visits. Some visitors came in for a family gathering, usually with children aged 5-10. Based on this meeting, we decided to focus on school field trip experience.</p>
+	<div class="box">
+		<div class="clmn-three-lft">
+			<img class="small" src="http://minjonglee.com/rivermatters/rm_target_csc.png" alt="Clients, Carnegie Science Center">
+			<p class="details"><span class="bold">Carnegie Science Center</span>
+			<br>"We want a piece that can market our upcoming exhibition, H2Oh!"</p>
+		</div>
+		<div class="clmn-three-cntr">
+			<img class="small" src="http://minjonglee.com/rivermatters/rm_target_teacher.png" alt="Target Demographic, Teachers">
+			<p class="details"><span class="bold">School Teachers</span>
+			<br>"Schools have technological barriers and the pieces need to fit in educational standards."</p>
+		</div>
+		<div class="clmn-three-rt">
+			<img class="small" src="http://minjonglee.com/rivermatters/rm_target_visitor.png" alt="Target Demographic, Museum visitors">
+			<p class="details"><span class="bold">Museum Visitors</span>
+			<br>"We want a unique experience as a family as well as information about the exhibition."</p>
+		</div>
+	</div>
+</section>
+<section class="fff-bg">
+	<h2 class="header">Interview Takeaways &mdash; Understanding Restrictions</h2>
+	<p class="narrow passage">While conducting usability testing for each design sprint, we interviewed with three different middle school teachers. Here, we learned that there were several restrictions when providing course materials to the students. Also, as we went through the interview, we adjusted our design so that it could be presented to the students at the end of the day. Below are the three main insights from the interviews.</p>
+	<div class="box">
+		<p class="clmn-three-lft details"><span class="bold">Technology barrier</span>
+		<br>During the interview with middle school teachers we found out that it is not always possible to bring newest technology inside the classroom.</p>
+		<p class="clmn-three-cntr details"><span class="bold">Time Constraint</span>
+		<br>The class usually takes around 40 to 50 minutes including roll calls, instructions and lessons learned. Therefore, the experience had to be within 30 minutes.</p>
+		<p class="clmn-three-rt details"><span class="bold">Educational Standard</span>
+		<br>The contents needed to be built under educational standards in order to be introduced to the students in the classroom. There were several educational standards that were suggested by Carnegie Science Center.</p>
+	</div>
+</section>
+<section class="fff-bg">
+	<h2 class="header">User Testing &mdash; Design engaging and usable product</h2>
+	<p class="narrow passage">We were conducting 5 different user testing sessions with 24 users. The first two sessions were to test user engagements and the last three sessions were to test prototypes and receive feedbacks. Students don't participate if they don't find the product interesting. Since we were designing a game for groups, we needed to make sure that the game is engaging so that everyone can actively participate in the game. In the latter sessions, we were looking for usability issues when students interacting with our prototypes, to iterate on the detailed interactions. </p>
+	<div class="box">
+		<img src="http://minjonglee.com/rivermatters/rm_usertesting.jpg" alt="User Testing">
+	</div>
+</section>
+<hr>
+<section class="fff-bg">
+	<div class="box">
+		<h2 class="header">Board game for the classroom</h2>
+		<img src="http://minjonglee.com/rivermatters/rm_physicalboard.jpg" alt="Physical Board Game">
+		<div class="box flex">
+			<div class="half-two-lft item">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1070 628"><defs></defs><g id="Page-2" fill="none" fill-rule="evenodd"><g id="rm"><g id="Group-5" stroke="#8C919C" stroke-linecap="round" stroke-linejoin="round"><g id="Group-4"><path id="Path-119" fill="#D8D8D8" d="M748.5 259.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M746.2 254.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M746.2 254.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy"><path id="Path-119" fill="#D8D8D8" d="M753.5 262.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M751.2 257.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M751.2 257.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-2"><path id="Path-119" fill="#D8D8D8" d="M758.5 265.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M756.2 260.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M756.2 260.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-3"><path id="Path-119" fill="#D8D8D8" d="M763.5 268.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M761.2 263.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M761.2 263.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-4"><path id="Path-119" fill="#D8D8D8" d="M768.5 271.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M766.2 266.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M766.2 266.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-5"><path id="Path-119" fill="#D8D8D8" d="M773.5 274.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M771.2 269.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M771.2 269.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-6"><path id="Path-119" fill="#D8D8D8" d="M778.5 277.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M776.2 272.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M776.2 272.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-7"><path id="Path-119" fill="#D8D8D8" d="M783.5 280.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M781.2 275.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M781.2 275.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-8"><path id="Path-119" fill="#D8D8D8" d="M788.5 283.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M786.2 278.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M786.2 278.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-9"><path id="Path-119" fill="#D8D8D8" d="M793.5 286.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M791.2 281.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#EEE" d="M791.2 281.7v3l2.3 1.7v-3l-2.3-1.7z"/></g></g><path id="Combined-Shape-Copy-6" fill="#00698D" stroke="#D8D8D8" d="M388 319.8l189.3 110L771 317.3 579 209 388 319.8z" stroke-linecap="round" stroke-linejoin="round"/><path id="Combined-Shape-Copy-6" fill="#FFF5EC" stroke="#D8D8D8" d="M396 320l181 105 185-107.4L578.7 214 396 320z" stroke-linecap="round" stroke-linejoin="round"/><g id="Group" stroke="#D8D8D8"><path id="Path-25-Copy" fill="#CAB7A8" d="M504 319.7l5 11 20 3.4 13.8-8-5.6-11.2L518 311l-14 8.7z"/><path id="Path-25-Copy-2" fill="#CAB7A8" d="M512 300.7l5 11 20 3.4 13.8-8-5.6-11.2L526 293l-14 7.7z"/><path id="Path-25" fill="#CAB7A8" d="M470.5 323.4l5 11 19.8 3.4 14-8.2-5.6-11-19.3-3-14 7.8z"/><path id="Path-25-Copy-4" fill="#CAB7A8" d="M520 351.7l5 11 20 3.4 13.8-8-5.6-11.2L534 344l-14 7.7z"/><path id="Path-25-Copy-8" fill="#CAB7A8" d="M545 365.7l5 11 20 3.4 13.8-8-5.6-11.2L559 358l-14 7.7z"/><path id="Path-25-Copy-5" fill="#CAB7A8" d="M553 346.7l5 11 20 3.4 13.8-8-5.6-11.2L567 339l-14 7.7z"/><path id="Path-25-Copy-9" fill="#CAB7A8" d="M578 360.7l5 11 20 3.4 13.8-8-5.6-11.2L592 353l-14 7.7z"/><path id="Path-25-Copy-3" fill="#CAB7A8" d="M479.2 305.7l5 11 20 3.4 13.8-8-5.6-11.2-19.2-2.8-14 7.7z"/><path id="Path-25-Copy-6" fill="#00D9D9" d="M528 332.7l5 11 20 3.4 13.8-8-5.6-11.2L542 325l-14 7.7z"/><path id="Path-25-Copy-7" fill="#00D9D9" d="M495 337.7l5 11 20 3.4 13.8-8-5.6-11.2L509 330l-14 7.7z"/><path id="Path-25-Copy" fill="#00D9D9" d="M570 310.7l5 11 20 3.4 13.8-8-5.6-11.2L584 302l-14 8.7z"/><path id="Path-25" fill="#CAB7A8" d="M536.5 315.4l5 10 19.8 3.4 14-8.2-5.6-11-19.3-3-14 8.8z"/><path id="Path-25-Copy-4" fill="#CAB7A8" d="M586 342.7l5 11 20 3.4 13.8-8-5.6-11.2L600 335l-14 7.7z"/><path id="Path-25-Copy-5" fill="#CAB7A8" d="M619 337.7l5 11 20 3.4 13.8-8-5.6-11.2L633 330l-14 7.7z"/><path id="Path-25-Copy-3" fill="#CAB7A8" d="M545.2 295.7l5 11 20 4.4 13.8-9-5.6-10.2-19.2-3.8-14 7.7z"/><path id="Path-25-Copy-10" fill="#CAB7A8" d="M521 281.7l5 11 20 4.4 13.8-9-5.6-10.2L535 274l-14 7.7z"/><path id="Path-25-Copy-6" fill="#CAB7A8" d="M594 323.7l5 11 20 3.4 13.8-8-5.6-11.2L608 316l-14 7.7z"/><path id="Path-25-Copy-7" fill="#00D9D9" d="M561 328.7l5 11 20 3.4 13.8-8-5.6-11.2L575 321l-14 7.7z"/><path id="Path-25-Copy-2" fill="#00D9D9" d="M578 291.7l5 11 20 3.4 13.8-8-5.6-11.2L592 284l-14 7.7z"/><path id="Path-25-Copy-11" fill="#CAB7A8" d="M554 277.7l5 11 20 3.4 13.8-8-5.6-11.2L568 270l-14 7.7z"/><path id="Path-25-Copy-7" fill="#CAB7A8" d="M603 305.7l5 11 20 3.4 13.8-8.2-5.6-11L617 298l-14 7.7z"/><path id="Path-25-Copy-7" fill="#CAB7A8" d="M627 319.7l5 11 21 3.4 13.8-8.2-5.6-11L642 312l-15 7.7z"/><path id="Path-25" fill="#CAB7A8" d="M586.5 274.4l5 10 19.8 3.4 14-8.2-5.6-11-19.3-3-14 8.8z"/><path id="Path-25-Copy-12" fill="#CAB7A8" d="M562 260.7l5 10 20 3.4 13.8-8.2-5.6-11L576 252l-14 8.7z"/><path id="Path-25-Copy-4" fill="#CAB7A8" d="M636 301.7l5 11 20 3.4 13.8-8.2-5.6-11L650 294l-14 7.7z"/><path id="Path-25-Copy-5" fill="#CAB7A8" d="M661 315.7l5 11 20 3.4 13.8-8.2-5.6-11L675 308l-14 7.7z"/><path id="Path-25-Copy-7" fill="#00D9D9" d="M611 287.7l5 11 20 3.4 13.8-8.2-5.6-11L625 280l-14 7.7z"/></g><path id="Combined-Shape-Copy-6" stroke="#D8D8D8" stroke-width="3" d="M388 319.8l189.3 110L771 317.3 579 209 388 319.8z" stroke-linecap="round" stroke-linejoin="round"/><path id="Combined-Shape" fill="#FBFBFB" stroke="#D8D8D8" stroke-width="3" d="M206.8 175l-6.8 4 7.7 4.4-7.7 4.6 6.8 4-6.8 4 118.4 68.7 92-53.4-7-4 7-4-8-4.4 8-4.7-7-4 7-4-121-68.3-89.4 53 6.8 4z" stroke-linecap="round" stroke-linejoin="round"/><path id="Path-1" fill="#FBFBFB" stroke="#D8D8D8" d="M289.5 143L200 196l118.4 68.7 92-53.4-121-68.3z" stroke-linecap="round" stroke-linejoin="round"/><path id="Path-1" fill="#FBFBFB" stroke="#D8D8D8" d="M289.5 135L200 188l118.4 68.7 92-53.4-121-68.3z" stroke-linecap="round" stroke-linejoin="round"/><path id="Path-1" fill="#FBFBFB" stroke="#D8D8D8" d="M289.5 126L200 179l118.4 68.7 92-53.4-121-68.3z" stroke-linecap="round" stroke-linejoin="round"/><path id="Path-1" fill="#FBFBFB" stroke="#D8D8D8" d="M289.5 118L200 171l118.4 68.7 92-53.4-121-68.3z" stroke-linecap="round" stroke-linejoin="round"/><path id="Path-1" fill="#E5E5E5" d="M286.6 126l-25.2 15-6.4 3.7 41.8 24.3 32.5-19-42.7-24z"/><g id="Group-7" stroke-linecap="round" stroke-linejoin="round"><path id="Combined-Shape-Copy-5" fill="#F8AC18" stroke="#D8D8D8" d="M389.2 310l43.2 25 65.6-38-43.7-24.8-65 37.7z"/><path id="Combined-Shape-Copy-5" stroke="#FFF" d="M401.2 308.5L435 328l51-29.6-34-19.3-50.8 29.5z"/><path id="Combined-Shape-Copy-5" fill="#FFF" stroke="#FFF" d="M452.4 282.8l27 15.7 6.6-4-27.3-15.4-6.3 3.8z"/></g><g id="Group-7" stroke-linecap="round" stroke-linejoin="round"><path id="Combined-Shape-Copy-5" fill="#F8AC18" stroke="#D8D8D8" d="M389.2 300l43.2 25 65.6-38-43.7-24.8-65 37.7z"/><path id="Combined-Shape-Copy-5" stroke="#FFF" d="M401.2 298.5L435 318l51-29.6-34-19.3-50.8 29.5z"/><path id="Combined-Shape-Copy-5" fill="#FFF" stroke="#FFF" d="M452.4 272.8l27 15.7 6.6-4-27.3-15.4-6.3 3.8z"/></g><g id="Group-7" stroke-linecap="round" stroke-linejoin="round"><path id="Combined-Shape-Copy-5" fill="#F8AC18" stroke="#D8D8D8" d="M389.2 290l43.2 25 65.6-38-43.7-24.8-65 37.7z"/><path id="Combined-Shape-Copy-5" stroke="#FFF" d="M401.2 288.5L435 308l51-29.6-34-19.3-50.8 29.5z"/><path id="Combined-Shape-Copy-5" fill="#FFF" stroke="#FFF" d="M452.4 262.8l27 15.7 6.6-4-27.3-15.4-6.3 3.8z"/></g><path id="Combined-Shape" stroke="#D8D8D8" stroke-width="3" d="M389.2 290l8.6 5-8.6 5 8.6 5-8.6 5 43.2 25 65.6-38-8.7-5 8.7-5-8.7-5 8.7-5-43.7-24.8-65 37.7z" stroke-linecap="round" stroke-linejoin="round"/><g id="Group-2"><path id="Combined-Shape-Copy-4" fill="#00A3E0" d="M220.5 358.8l59.8 34.7 92-53.3-60.6-34.3-91.2 52.8z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M285.4 338.4l6.2 12.6 22 3 41-23.8-28-15.7-41.2 24z"/><path id="Combined-Shape-Copy-4" stroke="#00A3DF" stroke-width="3" d="M220.5 358.8l59.8 34.7 92-53.3-60.6-34.3-91.2 52.8z" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-2"><path id="Combined-Shape-Copy-4" fill="#FBFBFB" stroke="#D8D8D8" d="M267.5 176.8l59.8 34.7 92-53.3-60.6-34.3-91.2 52.8z" stroke-linecap="round" stroke-linejoin="round"/><path id="Combined-Shape-Copy-4" fill="#E5E5E5" d="M369.4 136.4l6.2 12.6 22 3 4.4-4.2-26.6-15-6 3.6z"/><path id="Combined-Shape-Copy-4" stroke="#D8D8D8" stroke-width="3" d="M267.5 176.8l59.8 34.7 92-53.3-60.6-34.3-91.2 52.8z" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-2-Copy"><path id="Combined-Shape-Copy-4" fill="#333" stroke="#8C919C" d="M509.5 504.8l59.8 34.7 92-53.3-60.6-34.3-91.2 52.8z" stroke-linecap="round" stroke-linejoin="round"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M574.4 484.4l6.2 12.6 22 3 41-23.8-28-15.7-41.2 24z"/><path id="Combined-Shape-Copy-4" stroke="#333" stroke-width="3" d="M509.5 504.8l59.8 34.7 92-53.3-60.6-34.3-91.2 52.8z" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-2"><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M638.5 151.2l-59.8-34.7-92 53.3 60.6 34.3 91.2-52.8z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M573.6 171.6l-6.2-12.6-22-3-41 23.8 28 15.7 41.2-24z"/><path id="Combined-Shape-Copy-4" stroke="#00CE5C" stroke-width="3" d="M638.5 151.2l-59.8-34.7-92 53.3 60.6 34.3 91.2-52.8z" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-2-Copy-2"><path id="Combined-Shape-Copy-4" fill="#E8E8E8" d="M927.5 297.2l-59.8-34.7-92 53.3 60.6 34.3 91.2-52.8z"/><path id="Combined-Shape-Copy-4" fill="#FFF" d="M862.6 317.6l-6.2-12.6-22-3-41 23.8 28 15.7 41.2-24z"/><path id="Combined-Shape-Copy-4" stroke="#D8D8D8" stroke-width="3" d="M927.5 297.2l-59.8-34.7-92 53.3 60.6 34.3 91.2-52.8z" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-8-Copy" stroke="#8C919C" stroke-linecap="round" stroke-linejoin="round"><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M723 273l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#FFF" d="M729 272.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M738.7 263.3v7.3l-5.7-3.4V260l5.7 3.3z"/><path id="Path-75" fill="#D8D8D8" d="M729.2 272.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#FFF" d="M728 263l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#FFF" d="M728 263v3l-5 3 6 3.5 4.4-3V266l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M734 279l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#FFF" d="M740 278.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M749.7 269.3v7.3l-5.7-3.4V266l5.7 3.3z"/><path id="Path-75" fill="#D8D8D8" d="M740.2 278.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#FFF" d="M739 269l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#FFF" d="M739 269v3l-5 3 6 3.5 4.4-3V272l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M745 285l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#FFF" d="M751 284.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M760.7 275.3v7.3l-5.7-3.4V272l5.7 3.3z"/><path id="Path-75" fill="#D8D8D8" d="M751.2 284.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#FFF" d="M750 275l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#FFF" d="M750 275v3l-5 3 6 3.5 4.4-3V278l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M756 291l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#FFF" d="M762 290.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M771.7 281.3v7.3l-5.7-3.4V278l5.7 3.3z"/><path id="Path-75" fill="#D8D8D8" d="M762.2 290.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#FFF" d="M761 281l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#FFF" d="M761 281v3l-5 3 6 3.5 4.4-3V284l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M767 297l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#FFF" d="M773 296.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M782.7 287.3v7.3l-5.7-3.4V284l5.7 3.3z"/><path id="Path-75" fill="#D8D8D8" d="M773.2 296.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#FFF" d="M772 287l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#FFF" d="M772 287v3l-5 3 6 3.5 4.4-3V290l-5.4-3z"/></g></g></g><g id="Group-5" stroke="#8C919C" stroke-linecap="round" stroke-linejoin="round"><g id="Group-4"><path id="Path-119" fill="#333" d="M500.5 437.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M498.2 432.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M498.2 432.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy"><path id="Path-119" fill="#333" d="M505.5 440.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M503.2 435.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M503.2 435.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-2"><path id="Path-119" fill="#333" d="M510.5 443.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M508.2 438.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M508.2 438.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-3"><path id="Path-119" fill="#333" d="M515.5 446.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M513.2 441.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M513.2 441.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-4"><path id="Path-119" fill="#333" d="M520.5 449.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M518.2 444.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M518.2 444.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-5"><path id="Path-119" fill="#333" d="M525.5 452.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M523.2 447.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M523.2 447.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-6"><path id="Path-119" fill="#333" d="M530.5 455.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M528.2 450.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M528.2 450.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-7"><path id="Path-119" fill="#333" d="M535.5 458.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M533.2 453.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M533.2 453.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-8"><path id="Path-119" fill="#333" d="M540.5 461.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M538.2 456.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M538.2 456.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-9"><path id="Path-119" fill="#333" d="M545.5 464.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#656871" d="M543.2 459.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#656871" d="M543.2 459.7v3l2.3 1.7v-3l-2.3-1.7z"/></g></g><g id="Group-5" stroke="#8C919C" stroke-linecap="round" stroke-linejoin="round"><g id="Group-4"><path id="Path-119" fill="#2A8E57" d="M620.5 181.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M618.2 176.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M618.2 176.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy"><path id="Path-119" fill="#2A8E57" d="M625.5 184.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M623.2 179.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M623.2 179.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-2"><path id="Path-119" fill="#2A8E57" d="M630.5 187.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M628.2 182.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M628.2 182.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-3"><path id="Path-119" fill="#2A8E57" d="M635.5 190.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M633.2 185.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M633.2 185.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-4"><path id="Path-119" fill="#2A8E57" d="M640.5 193.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M638.2 188.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M638.2 188.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-5"><path id="Path-119" fill="#2A8E57" d="M645.5 196.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M643.2 191.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M643.2 191.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-6"><path id="Path-119" fill="#2A8E57" d="M650.5 199.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M648.2 194.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M648.2 194.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-7"><path id="Path-119" fill="#2A8E57" d="M655.5 202.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M653.2 197.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M653.2 197.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-8"><path id="Path-119" fill="#2A8E57" d="M660.5 205.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M658.2 200.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M658.2 200.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-9"><path id="Path-119" fill="#2A8E57" d="M665.5 208.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#00CE5C" d="M663.2 203.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#00CE5C" d="M663.2 203.7v3l2.3 1.7v-3l-2.3-1.7z"/></g></g><g id="Group-8" stroke="#8C919C" stroke-linecap="round" stroke-linejoin="round"><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M333 375l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#3DCBFF" d="M339 374.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M348.7 365.3v7.3l-5.7-3.4V362l5.7 3.3z"/><path id="Path-75" fill="#00A3DF" d="M339.2 374.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#3DCBFF" d="M338 365l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#3DCBFF" d="M338 365v3l-5 3 6 3.5 4.4-3V368l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M344 381l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#3DCBFF" d="M350 380.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M359.7 371.3v7.3l-5.7-3.4V368l5.7 3.3z"/><path id="Path-75" fill="#00A3DF" d="M350.2 380.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#3DCBFF" d="M349 371l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#3DCBFF" d="M349 371v3l-5 3 6 3.5 4.4-3V374l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M355 387l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#3DCBFF" d="M361 386.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M370.7 377.3v7.3l-5.7-3.4V374l5.7 3.3z"/><path id="Path-75" fill="#00A3DF" d="M361.2 386.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#3DCBFF" d="M360 377l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#3DCBFF" d="M360 377v3l-5 3 6 3.5 4.4-3V380l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M366 393l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#3DCBFF" d="M372 392.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M381.7 383.3v7.3l-5.7-3.4V380l5.7 3.3z"/><path id="Path-75" fill="#00A3DF" d="M372.2 392.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#3DCBFF" d="M371 383l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#3DCBFF" d="M371 383v3l-5 3 6 3.5 4.4-3V386l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M377 399l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#3DCBFF" d="M383 398.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M392.7 389.3v7.3l-5.7-3.4V386l5.7 3.3z"/><path id="Path-75" fill="#00A3DF" d="M383.2 398.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#3DCBFF" d="M382 389l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#3DCBFF" d="M382 389v3l-5 3 6 3.5 4.4-3V392l-5.4-3z"/></g></g></g><g id="Group-8-Copy" stroke="#8C919C" stroke-linecap="round" stroke-linejoin="round"><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M475 451l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#656871" d="M481 450.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M490.7 441.3v7.3l-5.7-3.4V438l5.7 3.3z"/><path id="Path-75" fill="#333" d="M481.2 450.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#656871" d="M480 441l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#656871" d="M480 441v3l-5 3 6 3.5 4.4-3V444l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M486 457l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#656871" d="M492 456.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M501.7 447.3v7.3l-5.7-3.4V444l5.7 3.3z"/><path id="Path-75" fill="#333" d="M492.2 456.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#656871" d="M491 447l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#656871" d="M491 447v3l-5 3 6 3.5 4.4-3V450l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M497 463l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#656871" d="M503 462.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M512.7 453.3v7.3l-5.7-3.4V450l5.7 3.3z"/><path id="Path-75" fill="#333" d="M503.2 462.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#656871" d="M502 453l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#656871" d="M502 453v3l-5 3 6 3.5 4.4-3V456l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M508 469l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#656871" d="M514 468.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M523.7 459.3v7.3l-5.7-3.4V456l5.7 3.3z"/><path id="Path-75" fill="#333" d="M514.2 468.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#656871" d="M513 459l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#656871" d="M513 459v3l-5 3 6 3.5 4.4-3V462l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M519 475l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#656871" d="M525 474.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M534.7 465.3v7.3l-5.7-3.4V462l5.7 3.3z"/><path id="Path-75" fill="#333" d="M525.2 474.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#656871" d="M524 465l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#656871" d="M524 465v3l-5 3 6 3.5 4.4-3V468l-5.4-3z"/></g></g></g><g id="Group-5" stroke="#8C919C" stroke-linecap="round" stroke-linejoin="round"><g id="Group-4"><g id="Group-9"><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M356.2 356.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M356.2 356.7v3l2.3 1.7v-3l-2.3-1.7z"/><path id="Path-600" d="M372 347.4l-15.7 9.2v3l2.3 2V358l15.7-9.4-2.3-1.4z"/><path id="Path-119" fill="#00A3DF" d="M358.5 361.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/></g></g><g id="Group-4-Copy"><path id="Path-119" fill="#00A3DF" d="M363.5 364.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M361.2 359.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M361.2 359.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-2"><path id="Path-119" fill="#00A3DF" d="M368.5 367.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M366.2 362.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M366.2 362.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-3"><path id="Path-119" fill="#00A3DF" d="M373.5 370.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M371.2 365.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M371.2 365.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-4"><path id="Path-119" fill="#00A3DF" d="M378.5 373.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M376.2 368.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M376.2 368.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-5"><path id="Path-119" fill="#00A3DF" d="M383.5 376.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M381.2 371.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M381.2 371.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-6"><path id="Path-119" fill="#00A3DF" d="M388.5 379.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M386.2 374.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M386.2 374.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-7"><path id="Path-119" fill="#00A3DF" d="M393.5 382.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M391.2 377.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M391.2 377.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-8"><path id="Path-119" fill="#00A3DF" d="M398.5 385.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M396.2 380.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M396.2 380.7v3l2.3 1.7v-3l-2.3-1.7z"/></g><g id="Group-4-Copy-9"><path id="Path-119" fill="#00A3DF" d="M403.5 388.4v-3.2l15.8-9.4v3.2l-15.8 9.4z"/><path id="Combined-Shape-Copy-4" fill="#3DCBFF" d="M401.2 383.6l2.4 1.4 15.7-9.2-2.3-1.3-15.8 9z"/><path id="Path-122" fill="#3DCBFF" d="M401.2 383.7v3l2.3 1.7v-3l-2.3-1.7z"/></g></g><text id="Water-Resources-Depa" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="50" y="349">Water Resources </tspan> <tspan x="50" y="373">Department</tspan> <tspan x="50" y="397">Rule Sheet</tspan></text><text id="Industry-Department-" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="733" y="485">Industry Department </tspan> <tspan x="733" y="509">Rule Sheet</tspan></text><text id="City-Planning-Depart" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="905" y="349">City Planning </tspan> <tspan x="905" y="373">Department </tspan> <tspan x="905" y="397">Rule Sheet</tspan></text><text id="Game-Board" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="733" y="392">Game Board</tspan></text><text id="Group-" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="50" y="209">Group </tspan> <tspan x="50" y="233">Scoring Sheet</tspan></text><text id="Event-Card" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="405.4" y="80">Event Card</tspan></text><text id="Game-Pieces:" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="50" y="485">Game Pieces:</tspan> <tspan x="50" y="509">5 Buildings</tspan> <tspan x="50" y="533">10 Connectors</tspan></text><text id="Environmental-Protec" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="733" y="70">Environmental </tspan> <tspan x="733" y="94">Protection </tspan> <tspan x="733" y="118">Department </tspan> <tspan x="733" y="142">Rule Sheet</tspan></text><text id="Individual-" fill="#FF5757" font-family="Lato-Bold, Lato" font-size="20" font-weight="bold"><tspan x="50" y="70">Individual </tspan> <tspan x="50" y="94">Scoring Sheet</tspan></text><g id="Group-8-Copy" stroke="#8C919C" stroke-linecap="round" stroke-linejoin="round"><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M595 195l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#00CE5C" d="M601 194.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M610.7 185.3v7.3l-5.7-3.4V182l5.7 3.3z"/><path id="Path-75" fill="#2B8E57" d="M601.2 194.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#00CE5C" d="M600 185l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#00CE5C" d="M600 185v3l-5 3 6 3.5 4.4-3V188l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M606 201l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#00CE5C" d="M612 200.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M621.7 191.3v7.3l-5.7-3.4V188l5.7 3.3z"/><path id="Path-75" fill="#2B8E57" d="M612.2 200.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#00CE5C" d="M611 191l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#00CE5C" d="M611 191v3l-5 3 6 3.5 4.4-3V194l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M617 207l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#00CE5C" d="M623 206.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M632.7 197.3v7.3l-5.7-3.4V194l5.7 3.3z"/><path id="Path-75" fill="#2B8E57" d="M623.2 206.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#00CE5C" d="M622 197l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#00CE5C" d="M622 197v3l-5 3 6 3.5 4.4-3V200l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M628 213l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#00CE5C" d="M634 212.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M643.7 203.3v7.3l-5.7-3.4V200l5.7 3.3z"/><path id="Path-75" fill="#2B8E57" d="M634.2 212.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#00CE5C" d="M633 203l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#00CE5C" d="M633 203v3l-5 3 6 3.5 4.4-3V206l-5.4-3z"/></g></g><g id="Group-6"><g id="Group-3"><path id="Combined-Shape-Copy-4" fill="#EEE" d="M639 219l6 3.6 9.8-6-5.7-3.3-10 5.8z"/><path id="Path-71" fill="#00CE5C" d="M645 218.2v4.3l-6-3.3v-4l6 3z"/><path id="Path-71-Copy" fill="#EEE" d="M654.7 209.3v7.3l-5.7-3.4V206l5.7 3.3z"/><path id="Path-75" fill="#2B8E57" d="M645.2 218.3v4.2l9.5-6v-7.3l-3.5-.3-1.7 2.8v3.7l-4.3 2.8z"/><path id="Path-615" fill="#00CE5C" d="M644 209l5.3 3 1.8-3h3.7l-5.7-3.3-2.7.3-2.3 3z"/><path id="Path-614" fill="#00CE5C" d="M644 209v3l-5 3 6 3.5 4.4-3V212l-5.4-3z"/></g></g></g><g id="Group-10" transform="translate(142 190)"><circle id="Oval-23" cx="164" cy="6" r="6" fill="#FF5757"/><path id="Path-556" stroke="#FF5757" stroke-width="2" d="M163 6H0" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-10-Copy-2" transform="translate(176 371)"><circle id="Oval-23" cx="104" cy="6" r="6" fill="#FF5757"/><path id="Path-556" stroke="#FF5757" stroke-width="2" d="M103 6H1" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-10" transform="rotate(90 183 278)"><circle id="Oval-23" cx="159" cy="6" r="6" fill="#FF5757"/><path id="Path-556" stroke="#FF5757" stroke-width="2" d="M160 6H0" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-10-Copy-3"><path id="Oval-23" fill="#FF5757" d="M656 381c-3.3 0-6 2.6-6 6 0 3.3 2.7 6 6 6s6-2.7 6-6c0-3.4-2.7-6-6-6z"/><path id="Path-562" stroke="#FF5757" stroke-width="2" d="M657 385.8h62" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-10-Copy-4"><path id="Oval-23" fill="#FF5757" d="M390.2 403.2c0-3-2.4-5.6-5.5-5.6-3 0-5.5 2.5-5.5 5.6 0 3 2.4 5.6 5.5 5.6 3 0 5.5-2.5 5.5-5.6z"/><path id="Path-562" stroke="#FF5757" stroke-width="2" d="M385.2 403v107h-195" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-10-Copy-3" transform="rotate(-180 360 62)"><circle id="Oval-23" cx="142" cy="6" r="6" fill="#FF5757"/><path id="Path-556" stroke="#FF5757" stroke-width="2" d="M138 6H0" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-10-Copy-3" transform="rotate(-180 360 246)"><circle id="Oval-23" cx="55" cy="6" r="6" fill="#FF5757"/><path id="Path-562" stroke="#FF5757" stroke-width="2" d="M55 6H1" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-10-Copy" transform="translate(98 107)"><circle id="Oval-23" cx="164" cy="29" r="6" fill="#FF5757"/><path id="Path-556" stroke="#FF5757" stroke-width="2" d="M163.3 29H0V0" stroke-linecap="round" stroke-linejoin="round"/></g><g id="Group-10-Copy-5" transform="rotate(-180 472.5 160)"><circle id="Oval-23" cx="82" cy="14" r="6" fill="#FF5757"/><path id="Path-556" stroke="#FF5757" stroke-width="2" d="M85.3 14H0V0" stroke-linecap="round" stroke-linejoin="round"/></g></g></g></svg>
+			</div>
+			<div class="half-two-rt item">
+				<p class="accent">"In the Classroom"</p>
+				<p class="passage">One of the product designed for the classroom was a board game that generates a space where students to discuss and express their opinion. We designed the game consists of four different roles of City Planning Department, Industry Department, Environment Protection Department and Water Resource Department. Four students are formed as a team, representing each department roles. In the game, students are asked to come up with one design plan that scores the most.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="fff-bg">
+	<h2 class="header">Tutorial Video &mdash; Less Time for Rules, More Time for Playing</h2>
+	<p class="narrow passage gap-btm">In middle school, classes take about 40-50 minutes and teachers use 10-15 minutes to wrap up the class. While we were testing the product with students, we spent full 20 minutes just to explain the game. To reduce this time and to provide teachers time to wrap up the class, we created tutorial video. As a result, students could fully understand the game after watching the tutorials for 6 minutes. While developing the tutorial video, we also learned that students focuses more closely into each specific rules when their roles were called individually.</p>
+	<div class="half-two-lft">
+		<!-- video input -->
+		<video class="vid" controls poster="./rivermatters/rm_videoimage.jpg">
+		<source src="./rivermatters/rm_video_tutorial_opt.mp4" type="video/mp4">
+		<source src=".webm" type="video/webm">
+		<source src=".ogv" type="video/ogv">
+		</video>
+		<h4>Tutorial for each roles</h4>
+		<p class="description">We created an instruction video that helps students to understand the rules. After 3 iterations of the video, we finalized with this version, which reduced total 19 minutes compared to oral instruction.</p>
+	</div>
+	<div class="half-two-rt">
+		<!-- video input -->
+		<video class="vid" controls poster="./rivermatters/rm_videoimage2.jpg">
+		<source src="./rivermatters/rm_video_event_opt.mp4" type="video/mp4">
+		<source src=".webm" type="video/webm">
+		<source src=".ogv" type="video/ogv">
+		</video>
+		<h4>Tutorial for Dynamic Event</h4>
+		<p class="description">We also added three additional phase into the game, which increased student's engagements after the half of the classtime.</p>		
+	</div>
+</section>
+<hr>
+<section>
+	<div class="box flex">
+		<div class="half-two-lft item">
+			<h2 class="header">Website and Dahsboard</h2>
+			<p class="passage">We integrated the board game into the Rivermatters website, bundled with a client side dashboard application. The application was to allow museum staffs to open competitions and manage rewards as marketing events. Also, through this application the staffs were able to track the number of website visitors, game players, and the winner of each competition.</p>
+		</div>
+		<div class="half-two-rt item">
+			<img src="./rivermatters/rm_structure.png" alt="Web Structure">
+		</div>
+	</div>
+	<div class="box flex">
+		<div class="half-two-lft sixty item">
+			<img src="http://minjonglee.com/rivermatters/rm_gameweb.png" alt="Web Game">
+		</div>
+		<div class="half-two-rt fourty item">
+			<p class="accent">"At Home"</p>
+			<p class="passage">Different from the classroom environment, the online game enables a visitor to explore and plan out the city individually. To transform 4 player game into 1 payer game, we changed the goal. In the physical board game, the educational goal was to allow students to discuss and cooperate, in the online game, the goal was to let the visitors to experiment and learn. To engage visitors, we implemented the scoreboard on the top right corner. </p>
+		</div>
+	</div>
+	
+
+</section>
+<section class="fff-bg">
+	<div class="btn gap">
+		<a href="http://54.175.30.133/intro/gameQuickIn" target="_blank"><p class="btn-page"><i class="fa fa-long-arrow-right" style="margin-right:12px;"></i>Try out River Matters online game</p></a>
+	</div>
+</section>
+<section>
+	<div class="scrolltotop">&nbsp;&nbsp;<i class="fa fa-angle-up"></i></div>	
+</section>
+<footer>
+	<p id="copyright">Copyright 2015. Designed & Coded by Minjong Lee.
+	<br>Font faces: Lato & Roboto, Icons: Font Awesome</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="./js/enquire.min.js"></script>
+<script type="text/javascript" src="./js/jssor.slider.mini.js"></script>
+<script>
+var jump = function(e) {
+	if (e) {
+		e.preventDefault();
+		var target = $(this).attr("href");
+	} else {
+		var target = location.hash;
+	}
+	// Animate scrolling
+	$('html, body').animate( {
+		// Get the top position of the target element
+		scrollTop: $(target).offset().top
+	},600,function() {
+		location.hash = target;
+	});
+}
+$(document).ready(function () {
+	// ** Fade the website in **
+	$('body').css('opacity', '0').fadeTo(600, 1, 'swing');
+	// ** Jump **
+	$('a[href^=#]').bind("click", jump);
+	if (location.hash) {
+		setTimeout(function() {
+			$('html, body').scrollTop(0).show();
+			jump();
+		}, 0);
+	} else {
+		$('html, body').show();
+	};
+	// ** Scroll Top, Process Button, Hide this **
+	$('.scrolltotop').click(function() {
+		$('html, body').animate({scrollTop : 0}, 1000);
+		return false;
+	});
+	$('#process-btn').click(function() {
+		$('#prcss').slideToggle('slow');
+	});
+	$(window).scroll(function(){
+		$('.hidethis').each(function(i){
+			a = $(this).offset().top + $(this).height();
+			b = $(window).scrollTop() + $(window).height();
+			if(a < b){
+				$(this).fadeTo(1200, 1);
+			}
+		});
+	 });
+	// ** Section detection ** //
+	function activated() {
+		var topMenu = $(".nav"),
+			topMenuHeight = topMenu.outerHeight() + 15,
+			//All list items
+			menuItems = topMenu.find("a"),
+			//Anchors corresponding to menu items
+			scrollItems = menuItems.map(function(){
+				var item = $($(this).attr("href"));
+				if (item.length) { return item; }
+			});
+			
+		//Bind to scroll
+		return $(window).scroll(function(){
+		//Get container scroll position
+		var fromTop = $(this).scrollTop()+topMenuHeight;
+		//Get id of current scroll item
+		var cur = scrollItems.map(function() {
+			if ($(this).offset().top < fromTop)
+				return this;
+			});
+		//Get the id of the current element
+		cur = cur[cur.length - 1];
+		var id = cur && cur.length ? cur[0].id : "";
+		//Set & remove active class
+		menuItems
+			.parent().removeClass("active")
+			.end().filter("[href=#" + id + "]").parent().addClass("active");
+		});
+	};
+	enquire.register("screen and (max-width:600px)", [
+		{ match : function () {
+		// ** Add mobile-nav icon ** //
+					$(function() {
+						var mobile = $('#mobile-nav');
+						var menu = $('.nav ul');
+						var menuHeight = menu.height();
+						mobile.off('click');
+						mobile.on('click', function(e) {
+							e.preventDefault();
+							menu.slideToggle();
+						});
+						$(window).resize(function() {
+							var w = $(window).width();
+							if (w > 600 && menu.is(':hidden')) {
+								menu.removeAttr('style');
+							}
+						});
+					});
+					$(function() {
+						var menu = $('.nav ul');
+						var navMain = $('header');
+						navMain.off('click');
+						navMain.on('click', 'a', null, function () {
+							menu.slideToggle();
+						});
+					});
+			} },
+		{ unmatch : function() { $("header").off('click'); } }
+	]);
+	enquire.register("screen and (min-width:601px)", [
+		{ match : function () {
+			// ** When scrolled underneath the intro, slide down the navigation **
+			//	$(window).on("scroll", function () {
+			//		$("header").toggleClass("bged", ($(window).scrollTop() > 799));
+			//	});
+			} }
+	]);
+	activated();
+});
+        $(document).ready(function (i) {
+
+            var _SlideshowTransitions = [
+            //Fade
+            { $Duration: 1200, $Opacity: 2 }
+            ];
+
+	           var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 3000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 800));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+</script>
+<!-- Project timeline d3js 3/4 -->
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+var dataset = [
+{rry: 0, name: 'communication', content: 'Project Scope', level:2, start: '08/25/2014', end: '09/02/2014'},
+{rry: 0, name: 'communication', content: 'Client side project discussion', level:2, start: '10/20/2014', end: '10/30/2014'},
+{rry: 0, name: 'communication', content: 'Dashboard pitch', level:7, start: '11/21/2014', end: '11/25/2014'},
+{rry: 1, name: 'ideation', content: 'Ideation with client', level:8, start: '08/25/2014', end: '08/29/2014'},
+{rry: 1, name: 'ideation', content: 'Side project : board game', level:8, start: '09/15/2014', end: '09/19/2014'},
+{rry: 1, name: 'ideation', content: 'Dashboard idea', level:8, start: '11/10/2014', end: '11/14/2014'},
+{rry: 2, name: 'research', content: 'Field research', level:4, start: '09/01/2014', end: '09/04/2014'},
+{rry: 2, name: 'research', content: 'Clients & Museum visitor interview @CSC', level:10, start: '09/01/2014', end: '09/06/2014'},
+{rry: 2, name: 'research', content: 'School Faculty Interview @Elizabeth Forward', level:10, start: '09/17/2014', end: '09/20/2014'},
+{rry: 2, name: 'research', content: 'Affinity diagram & Persona', level:10, start: '09/22/2014', end: '10/07/2014'},
+{rry: 2, name: 'research', content: 'Secondary Research', level:10, start: '09/29/2014', end: '10/17/2014'},
+{rry: 3, name: 'design', content: 'Game design', level:6, start: '09/01/2014', end: '09/05/2014'},
+{rry: 3, name: 'design', content: 'Game design : instruction iteration', level:6, start: '09/08/2014', end: '09/22/2014'},
+{rry: 3, name: 'design', content: 'Homepage flow & wireframing', level:6, start: '09/18/2014', end: '09/26/2014'},
+{rry: 3, name: 'design', content: 'User Interface', level:3, start: '09/15/2014', end: '09/26/2014'},
+{rry: 3, name: 'design', content: 'Side project graphic design', level:2, start: '10/06/2014', end: '10/17/2014'},
+{rry: 3, name: 'design', content: 'Client side dashboard', level:7, start: '11/17/2014', end: '11/28/2014'},
+{rry: 4, name: 'testing', content: 'Flow audit @CMU', level:4, start: '09/18/2014', end: '09/22/2014'},
+{rry: 4, name: 'testing', content: 'First draft of the game @CSC', level:4, start: '09/22/2014', end: '09/26/2014'},
+{rry: 4, name: 'testing', content: 'Usability testing @CMU', level:4, start: '10/10/2014', end: '10/14/2014'},
+{rry: 4, name: 'testing', content: 'Interface usability @Elizabeth Forward', level:4, start: '11/10/2014', end: '11/14/2014'},
+{rry: 4, name: 'testing', content: 'Game Instruction @Elizabeth Forward', level:4, start: '11/17/2014', end: '11/21/2014'},
+{rry: 4, name: 'testing', content: 'Dashboard usability @CSC', level:7, start: '12/01/2014', end: '12/05/2014'},
+{rry: 5, name: 'development', content: 'Backend development', level:7, start: '09/08/2014', end: '09/19/2014'},
+{rry: 5, name: 'development', content: 'Game programming', level:7, start: '09/22/2014', end: '10/10/2014'},
+{rry: 5, name: 'development', content: 'Webpage integration', level:7, start: '10/13/2014', end: '10/24/2014'},
+{rry: 5, name: 'development', content: 'Frontend development', level:7, start: '10/27/2014', end: '11/26/2014'},
+{rry: 5, name: 'development', content: 'Project migration', level:7, start: '12/09/2014', end: '12/12/2014'}], 
+names = ['communication', 'ideation', 'research', 'design', 'testing', 'development'],
+tBegin = '01/01/2015',
+tEnd = '05/01/2015'
+
+var starting = function(d) {return d.start;},
+	ending = function(d) {return d.end;}
+
+var color = d3.scale.ordinal()
+	.range(["#ffff00", "#b5ff00","#00ff91", "#00fff2", "#00e1ff", "#00aaff"])
+
+color.domain(['communication', 'ideation', 'research', 'design', 'testing', 'development']);
+
+var w = 900,
+	h = 300,
+    m = [40, 40, 40, 100], /* top[0] right[1] bottom[2] left[3]*/
+    p = 40,
+    g = 20,
+	barHeight = 20,
+	t = 8	
+	
+var width = w - m[1] - m[3],
+	height = h - m[0] - m[2]
+
+var y = d3.scale.ordinal()
+		.range([height*1/6+g, height*2/6+g, height*3/6+g, height*4/6+g, height*5/6+g, height+g]),
+	x = d3.time.scale()
+		.range([g, width-g]);
+
+var dateFormat = d3.time.format('%m/%d/%Y'), 
+	parse = dateFormat.parse;
+
+x.domain([d3.min(dataset, function(dataset) {return parse(dataset.start);}),
+			d3.max(dataset, function(dataset) {return parse(dataset.end);}) ])
+
+y.domain(names)
+
+var yAxis = d3.svg.axis()
+			.scale(y)
+			.orient('left')
+			.ticks(t)
+			.tickValues(names);
+
+var xAxis = d3.svg.axis()
+			.scale(x)
+			.orient('top')
+			.ticks(t)
+			.tickFormat(d3.time.format('%b %d'));
+
+var svg = d3.select('.package').append('svg')
+		.attr('width', width + m[1] + m[3])
+		.attr('height', height + m[0] + m[2])
+		.append('g')
+		.attr('transform', 'translate(' + m[3] + ',' + m[0] + ')');
+
+var tips = d3.select('.package').append('div')
+		.attr('class', 'tips')
+		.style('opacity', 0);
+
+var taps = d3.select('.package').append('div')
+		.attr('class', 'taps')
+		.style('opacity', 0);
+
+svg.append('rect')
+	.attr('class', 'lined')
+	.attr('width', width)
+	.attr('height', height-1)
+	.attr('transform', 'translate(0' + ',' + m[0] + ')');
+
+svg.append('g')
+	.attr('class', 'x axis')
+	.attr('transform', 'translate(' + 0 + ',' + m[0] + ')')
+	.call(xAxis);
+	
+svg.append('g')
+	.attr('class', 'y axis')
+	.attr('transform', 'translate(' + 0 + ',' + 0 + ')')
+	.call(yAxis);
+
+var xGrid = function(dataset) {
+	return d3.svg.axis()
+		.scale(x)
+		.orient('top')
+		.ticks(t);}
+
+var yGrid = function(d) {
+	return d3.svg.axis()
+		.scale(y)
+		.orient('left')
+		.ticks(t);}
+
+svg.append('g')
+	.attr('class', 'grid')
+	.attr('transform', 'translate(' + 0 + ',' + m[0] + ')')
+	.call(xGrid()
+			.tickSize(-height, 0, 0)
+			.tickFormat(""))
+		
+svg.append('g')
+	.attr('class', 'grid')
+	.attr('transform', 'translate(0,' + 0 + ')')
+	.call(yGrid()
+		.tickSize(-width, 0, 0)
+		.tickFormat(""))
+
+var chart = svg.append('g').selectAll('rect.bars')
+	.data(dataset)
+	.enter().append('rect')
+	.attr('class', 'bars')
+	.attr('data-name',  function(d) {return d.name;})
+	.attr('x', function(d) {return x(parse(d.start));})
+	.attr('width', 0)
+	.attr('height', barHeight)
+	.attr('y', function(d) { return y(d.rry)-barHeight/2;})
+	.attr('fill', function(d) {return color(d.name);})
+	.style('opacity', 0.6)
+	.on('mouseover', function(d, i) {
+	
+		tips.transition()
+			.style('opacity', 1)
+			.duration(200);
+
+		tips.html('Start Date&nbsp;&nbsp;' + d.start + '<br> End Date&nbsp;&nbsp;&nbsp;&nbsp;' + d.end + '<br><span style=" color:'+ color(d.name) +';font-weight:400;">' + d.content + '</span>')
+			.style('left', (x(parse(d.start)) + ( x(parse(d.end)) - x(parse(d.start)) )/2 + p/2) + 'px')
+			.style('top', (y(d.rry) + barHeight*2 + g) + 'px'); 
+
+		var myDataName = $(this).attr('data-name');
+
+		$('rect.bars').siblings('[data-name="' + myDataName + '"]').animate({opacity: 1}, 200);
+		$('rect.bars').not('[data-name="' + myDataName + '"]').animate({opacity: .2}, 200);		
+	})
+	.on('mouseout', function(d) {
+		tips.transition()
+			.style('opacity', 0)
+			.duration(200);
+
+		$('rect.bars').css('opacity', .6);
+	});
+
+chart.transition()
+	.attr('width', function(d) {return x(parse(d.end)) - x(parse(d.start));})
+	.delay(function(d, i) { return i * (500 / dataset.length);})
+	.ease('elastic')
+	.duration(800);
+
+/* Total time spent */
+var nameSum = 
+d3.nest()
+	.key(function(d) {return d.name;})
+	.rollup(function(v) { return {
+		width: d3.sum(v, function(d) {return x(parse(d.end)) - x(parse(d.start));}),
+		count: d3.sum(v, function(d) {return Math.round(Math.abs((parse(d.start).getTime() - parse(d.end).getTime()) / (1000*60*60*24))) })
+		}
+	})
+	.entries(dataset);
+	console.log(nameSum);
+
+var totalTimeSpent = 
+svg.append('g').selectAll('rect.stacks')
+	.data(nameSum)
+	.enter().append('rect')
+	.attr('class', 'stacks')
+	.attr('x', 0)
+	.attr('data-name', function(d) {return d.key;})
+	.attr('y', function(d, i) { return y(d.key)-barHeight/2;})
+	.attr('width', 0)
+	.attr('height', barHeight)
+	.attr('fill', function(d) {return color(d.key);})
+	.attr('opacity', .6)
+	.on('mouseover', function(d, i) {
+			taps.transition()
+				.style('opacity', 1)
+				.duration(50);
+
+			taps.html('Time spent&nbsp;:&nbsp;' + nameSum[i].values.count + '&nbsp;Days')
+				.style('left',(nameSum[i].values.width + m[3] + g) + 'px')
+				.style('top', (y(d.key) + barHeight +1) + 'px'); 
+				
+			var myDataName = $(this).attr('data-name');
+			console.log(myDataName);
+			$('rect.stacks').siblings('[data-name="' + myDataName + '"]').animate({opacity: 1}, 200);
+			$('rect.stacks').not('[data-name="' + myDataName + '"]').animate({opacity: .2}, 200);
+				
+	})
+	.on('mouseout', function(d) {
+			taps.transition()
+				.style('opacity', 0)
+				.duration(200);
+				
+	$('rect.stacks').css('opacity', .6);
+	
+	});
+
+$('#timeline').on('click', function(d) {
+	d3.selectAll('rect.stacks')
+	.transition()
+	.attr('width', 0)
+	.delay(function(d, i) {return i * (500 / nameSum.length);})
+	.ease('cubic')
+	.duration(200);
+$('#timesum').removeClass('active');
+$('#timesum').addClass('inactive');	
+$('#timeline').removeClass('inactive');	
+$('#timeline').addClass('active');
+chart.transition()
+	.attr('width', function(d) {return x(parse(d.end)) - x(parse(d.start));})
+	.delay(function(d, i) { return i * (500 / dataset.length);})
+	.ease('elastic')
+	.duration(800);	
+});
+
+$('#timesum').on('click', function(d) {
+	d3.selectAll('rect.bars')
+		.transition()
+		.attr('width', 0)
+		.delay(function(d, i) {return i * (500 / dataset.length);})
+		.ease('cubic')
+		.duration(200);
+$('#timesum').addClass('active');	
+$('#timesum').removeClass('inactive');	
+$('#timeline').removeClass('active');
+$('#timeline').addClass('inactive');	
+	totalTimeSpent.transition()
+		.attr('width', function(d, i) { return nameSum[i].values.width;})
+		.delay(function(d, i) { return i * (500 / nameSum.length);})
+		.ease('elastic')
+		.duration(800);	
+});
+// Project timeline d3js 3/4
+// Link hover 
+$('p.btn-page').hover(function(){
+			$(this).find('i').css("margin-left", "6px");
+        }, function(){
+			$(this).find('i').css("margin-left", 0);
+    });
+</script>
+
+</body>
+</html>

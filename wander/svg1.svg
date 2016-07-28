@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>svg1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="svg1">
+            <rect id="Rectangle-970" x="0" y="0" width="100" height="100"></rect>
+            <ellipse id="Oval-88-Copy-3" stroke="#A0A1A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" cx="49.7043919" cy="49.7043919" rx="24.7043919" ry="24.7043919"></ellipse>
+            <path d="M48.6872587,48.8223938 L48.6872587,40.2702703 C48.6872587,39.2840475 49.4867502,38.484556 50.472973,38.484556 C51.4591957,38.484556 52.2586873,39.2840475 52.2586873,40.2702703 L52.2586873,48.8223938 L60.7221284,48.8223938 C61.7083511,48.8223938 62.5078427,49.6218853 62.5078427,50.6081081 C62.5078427,51.5943309 61.7083511,52.3938224 60.7221284,52.3938224 L52.2586873,52.3938224 L52.2586873,60.8572635 C52.2586873,61.8434863 51.4591957,62.6429778 50.472973,62.6429778 C49.4867502,62.6429778 48.6872587,61.8434863 48.6872587,60.8572635 L48.6872587,52.3938224 L40.1351351,52.3938224 C39.1489124,52.3938224 38.3494208,51.5943309 38.3494208,50.6081081 C38.3494208,49.6218853 39.1489124,48.8223938 40.1351351,48.8223938 L48.6872587,48.8223938 Z" id="Combined-Shape" fill="#BFC0C4"></path>
+        </g>
+    </g>
+</svg>
