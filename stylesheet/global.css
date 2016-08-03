@@ -107,8 +107,8 @@ line-height: 1.6em;
 p {
 font-family:'Roboto',sans-serif;
 font-weight:300;
-font-size:1.132em;
-line-height:1.6em;
+font-size: 1.142em;
+line-height: 1.712em;
 text-align:left;
 color:#4C4F58;
 }
@@ -116,7 +116,7 @@ color:#4C4F58;
 .header {
 font-family:'Lato', serif;
 max-width: 860px;
-font-weight: 700;
+font-weight: 400;
 text-align: left;
 margin: 2% auto 1.2% auto;
 }
@@ -128,10 +128,10 @@ margin:0 8%;
 width:60%;
 font-family:'Roboto',sans-serif;
 font-weight:300;
-font-size:1.4em;
+font-size:1.8em;
 line-height:1.8em;
 text-align:center;
-color:#FF5757;
+color:#232323;
 margin:4% auto;
 }
 #copyright {
