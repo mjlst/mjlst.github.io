@@ -1,414 +1,167 @@
 <!DOCTYPE html>
 <html>
-<!-- Oh, hey, hello! You're now on the backstage of Minjong's website, WELCOME! :) 
-If you are looking for someone who is passionate about designing, making and building, you're on the right place.
-Please enjoy! -->
 <head>
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<title>Minjong Lee, UX Designer</title>
-	<link rel="icon" type="image/png" href="./general/favicon.png">
-	<!-- Meta Viewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css">
-	<!-- Master stylesheet -->
-	<link rel="stylesheet" href="./stylesheet/global.css">
-	<link rel="stylesheet" href="./stylesheet/page.css">
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<title>Hello : ) I'm Minjong.</title>
+<link rel="icon" type="image/png" href="./general/favicon.png">
+<!-- Meta Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Not using fontawesome anymore -->
+<!-- Master stylesheet -->
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-49851605-1', 'auto');
-	  ga('send', 'pageview');
+  ga('create', 'UA-49851605-1', 'auto');
+  ga('send', 'pageview');
 
-	</script>
-
+</script>
 </head>
 <body>
-<header class="nav bged">
-	<div id="mobile-nav"><i class="fa fa-bars fa-2x"></i></div>
-	<h1 id="logo"><a href="index.html#ftr">Minjong Lee Portfolio</a></h1>
-	<ul class="nav-group">
-		<li><a href="rivermatters.html">See also : Rivermatters&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+<div class="header">
+	<a href="./index.html"><h1 class="logo">Minjong Lee</h1></a><p class="support menuon">S'more</p>
+</div>
+<div class="menu">
+	<div class="off">
+		<svg width="23" height="24" viewBox="-77 163 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M-65.4 174l9.7-9.7.3-.3.4.3.6.7.4.3-.4.4-9.6 9.8 9.6 9.8.4.3-.4.4-.6.6-.4.4-.3-.4-9.7-9.8-9 9.2-.3.3-.3-.3-.7-.7-.3-.4.3-.4 9-9-9-9.3-.3-.3.3-.3.7-.7.3-.3.3.3 9 9z" fill-rule="evenodd" fill="#92bfce"/></svg>
+	</div>
+	<ul>
+		<li><a class="list" href="http://sigfig.com">SigFig</a></li>
+		<li><a class="list" href="./bookclip.html">Bookclip</a></li>
+		<li class="focus here"><a class="list" href="./rigit.html">Rig-it</a></li>
+		<li><a class="list" href="./tempvis.html">Data Vis</a></li>
+		<li><a class="list" href="./rivermatters.html">Rivermatters</a></li>
+<!-- 		<li><p class="list abouton">about</p></li> -->
 	</ul>
-</header>
-<section class="bg fff-bg flex">
-	<div class="box-int item flex">
-		<div class="half-two-lft item">
-			<figure class="rigit-int"></figure>
-		</div>
-		<div class="half-two-rt item">
-			<h2>Rig-it, iOS</h2>
-			<p class="passage red">/ Nov 2014 - Dec 2014</p>
-			<p class="passage">Rig-it is a mobile application for Emergency Medical Technicians. to help ambulance equipment checks more interactive and to create a positive feedback loop of helpful behavior among Emergency Medical Technicians.
-			</p>
-		</div>
+	<img src="./sigfig.svg">
+	<img src="./bk_int.png">
+	<img src="./rigit/rigit.png">
+	<img src="./tempvis.png">
+	<img class="here" src="./rm_.png">
+<!-- 	<img src="./minj_prfl.png"> -->
+</div>
+<!-- 
+<div class="about">
+	<div class="off"><svg width="23" height="24" viewBox="-77 163 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M-65.4 174l9.7-9.7.3-.3.4.3.6.7.4.3-.4.4-9.6 9.8 9.6 9.8.4.3-.4.4-.6.6-.4.4-.3-.4-9.7-9.8-9 9.2-.3.3-.3-.3-.7-.7-.3-.4.3-.4 9-9-9-9.3-.3-.3.3-.3.7-.7.3-.3.3.3 9 9z" fill-rule="evenodd" fill="#92bfce"/></svg></div>
+	<div><p>Copies about Minjong Lee will be coming soon.</p></div>
+</div>
+ -->
+<div class="intro full center">
+	<h1 class="projectna center fadein">Ambulance Equipment Check Application</h1>
+	<p class="sub fadein">Rig-it</p>
+	<div>
+		<p class="tag">Research</p><p class="tag">Prototyping</p><p class="tag">iOS</p><p class="tag">Early 2015</p>
 	</div>
-</section>
-<section class="fff-bg" id="brief">
-	<div class="box">
-		<div class="half-two-lft">
-			<p class="description bold cntr">Deliverable</p>
-			<p class="description cntr">UI Design</p>
-			<p class="description cntr">Interactive prototype</p>
-			<p class="description cntr">High fidelity mockup</p>
-		</div>
-		<div class="half-two-rt">
-			<p class="description bold cntr">Contribution</p>
-			<p class="description cntr">User Research</p>
-			<p class="description cntr">User Interface Design</p>
-			<p class="description cntr">Prototyping</p>
-		</div>
-	</div>
-</section>
-<hr>
-<section>
-	<h2 class="header">How to improve ambulance equipment check process?</h2>
-	<p class="narrow passage">Emergency Medical Technician's shift starts with 1-2 hours of ambulance equipment check. Missing any equipment can be critical in emergency situations. However, the check process is often done with a paper and a pen filled with long lists of items with checkboxes.</p>
-	<p class="narrow passage">Sometimes, they have no time to finish the check, and run to take care of their patients.</p>
-	<h5 class="narrow">1-2 hours of ambulance equipment check,</h5>
-	<p class="narrow passage">Rig-it aimed to streamline the process of checking both the equipment inside the main cab and the back of the ambulance, in addition to maintaining the vehicle itself.</p>
-</section>
-<section class="fff-bg">
-	<div class="box">
-		<h2 class="header center">Final Deliverable - Application Walkthrough</h2>
-			<video class="vid" controls poster="./rigit/rigit_videoimage.png">
+</div>
+<div>
+	<h2>The Idea</h2>
+	<h3>How to improve ambulance equipment check process?</h3>
+	<p>Emergency Medical Technician's shift starts with 1-2 hours of ambulance equipment check. Missing any equipment can be critical in emergency situations. However, the check process is often done with a paper and a pen filled with long lists of items with checkboxes. Sometimes, they have no time to finish the check, and run to take care of their patients.</p>
+	<h3>1-2 hours of ambulance equipment check</h3>
+	<p>Rig-it aimed to streamline the process of checking both the equipment inside the main cab and the back of the ambulance, in addition to maintaining the vehicle itself.</p>
+
+	<h2>Final Deliverable</h2>
+	<figure>
+		<video class="vid" controls poster="./rigit/rigit_videoimage.png">
 			<source src="./rigit/rigit_walkthrough_opt.mp4" type="video/mp4">
 			<source src=".webm" type="video/webm">
 			<source src=".ogv" type="video/ogv">
-			</video>
+		</video>
+		<figcaption>Application Walkthrough</figcaption>
+	</figure>
+	<p>In addition to final walkthrough prototype, we put design document together for the application. This document explains target audience, purpose, functionality and backend requirements.</p>
+	<div class="center">
+		<a href="./rigit/rigit_designspec.pdf" target="_blank"><p class="cta">View Design Specification Document</p></a>
 	</div>
-</section>
-<section>
-	<div class="btn">
-		<a href="./rigit/rigit_designspec.pdf" target="_blank"><p class="btn-page"><i class="fa fa-long-arrow-right" style="margin-right:12px;"></i>RigIt Design Specification Document</p></a>
-	</div>
-
-</section>
-<section class="fff-bg">
-	<h2 class="header">Rig-it focuses on three key functions.</h2>
-	<p class="narrow passage gap-btm">Checklists are divided into a few sections based on the ambulance compartment. EMTs(Emergency Medical Technicians) go through each section, teamed up in two people. We provided the list based on these compartments. EMTs can jump between items or mark items as to be replenished.</p>
-	<div class="box">
-		<div class="clmn-three-lft delay1">
-			<img class="small" src="rigit/rigit_i1.svg" alt="Add to Replenish Item">
-			<h4>Add to Replenish Item</h4>
-			<p class="description">This acts as a 'shopping' list for when they are going through the check.</p>
-		</div>
-		<div class="clmn-three-cntr delay2">
-			<img class="small" src="rigit/rigit_i2.svg" alt="Check">
-			<h4>Check</h4>
-			<p class="description">When a section has been completed, it will be grayed out, but the user can still click on it.</p>
-		</div>
-		<div class="clmn-three-rt delay3">
-			<img class="small" src="rigit/rigit_i3.svg" alt="Skip">
-			<h4>Skip</h4>
-			<p class="description">Users can skip the item to bring this at the end of the list.</p>
-		</div>
-	</div>
-</section>
-<section>
-	<h2 class="header">Provide positive feedback loop.</h2>
-	<p class="narrow passage gap-btm">One of the key insights that we learned from our user research was the lack of appreciation in EMTs works. Even though Emergency Medical Technicians were aware of the importance of their work, they were discouraged by people treating them as drivers. In addition, Emergency Medical Technicians were strongly tied into their community sharing their experiences. Motivated by this, we pitched the 'Send Thanks' function. This will also encourage the EMTs to help the next shifts to refill the items that they couldn't get replenished.</p>
-	<div class="box hr flex">
-		<div class="half-two-lft">
-			<img class="block" src="./rigit/rigit_thanks.gif" alt="Send Thanks Feature">
-		</div>
-		<div class="half-two-rt fourty item">
-			<h4 class="left">Send Thanks</h4>
-			<p class="passage">On the Thanks Page, the user will be able to see the thank you messages from other EMT crew members. At the top, there is a count of the number of thanks that the user has received.</p>
-		</div>
-	</div>
-	<hr class="gap">
-	<div class="box flex">
-		<div class="half-two-lft">
-			<img class="block" src="./rigit/rigit_headsup.gif" alt="Heads Up Item Feature">
-		</div>
-		<div class="half-two-rt fourty item">
-			<h4 class="left">Heads Up Item</h4>
-			<p class="passage">A Heads Up item has a faded out red background with the small title, in contrast to the white and gray background for regular items. This difference is meant to differentiate Heads Up items from regular items so that when working through a particular section the EMT will pay more attention to the Heads Up items.</p>
-		</div>
-	</div>
-</section>
-<hr>
-<section class="fff-bg">
-	<h2 class="header">Persona</h2>
-	<p class="narrow passage">We were provided with a task to create an application that helps daily EMTs work flow, as well as personas.</p>
-	<div class="half-two-lft">
-		<img class="small" src="./rigit/rigit_persona_sharon.png" alt="Persona, Shanon">
-		<p class="description">"I am a tech-savvy, who loves to try out new applications. As a mother of a child, I love to share my stories as an Emergency Medical Technician."</p>
-	</div>
-	<div class="half-two-rt">
-		<img class="small" src="./rigit/rigit_persona_roland.png" alt="Persona, Roland">
-		<p class="description">"I am not very comfortable using complicated applications with small texts. I want to work in a more organized way and get confident with my daily jobs."</p>
-	</div>
-</section>
-<section class="fff-bg">
-	<h2 class="header">Understanding EMTs work &mdash; Secondary Research</h2>
-	<p class="narrow passage">To understand their daily bases works, we conducted online researches by joining their social networks, communities as well as watching videos explaining their works. We've got some insights after this basic research.</p>
-
-	<p class="narrow passage"><span class="stepli">1</span><span class="bold">Long Downtimes</span><br>Until when they receive a call from a 911 call taker, they have to wait. A lot of times EMTs are having a long downtimes, which they are suffering with.</p>
-	<p class="narrow passage"><span class="stepli">2</span><span class="bold">Lack of Appreciation on EMTs</span><br>Even though their job is crucial in saving people's lives, sometimes they are disappointed by people treating them as drivers. </p>
-
-	<p class="narrow passage"><span class="stepli">3</span><span class="bold">Strong EMT Communities</span><br>There are a huge EMT communities online including local groups. They share their stories and articles related to their works and lives.</p>
-	<p class="narrow passage"><span class="stepli">4</span><span class="bold">Tedious Process of Ambulance Equipment Checks(Rig Check)</span><br>They spend the first 1-2 hours of shift with checking equipments in the ambulance, making sure all the required equipments are in place otherwise, they replenish them.</p>
-</section>
-<section>
-	<h2 class="header">Interview Takeaways</h2>
-	<p class="narrow passage">To get an in-depth information about EMTs and Rig-Check procedure, I had an interview with a previous EMT from my connection. My team formed questions all together and narrowed them down to get good information in 20 minutes. Below are the insights that we got from the interview and the email questionnaire.</p>
-	<div class="box gap">
-		<p class="clmn-three-lft details">I would like to change it up with rig checks meaning sometimes I would check the back and other days the front. This will help you be very comfortable with the ambulance you are in.</p>
-		<p class="clmn-three-cntr details">Usually, the checklist was set up in a system conducive to the way the compartments were set up so you did not have a scattered list. It <span class="bold dark">started at the back bottom compartment and ended with the front top compartment.</span></p>
-		<p class="clmn-three-rt details">There were times that emergency calls interrupted your rig check, but afterwards, you would still have to complete it, it was part of the work assignment daily. Your crew chief would look for each of them daily.</p>
-	</div>
-	<div class="box">
-		<p class="clmn-three-lft details">The rig check is done at the beginning of each shift. <span class="bold dark">It is up to the crew to replace ALL supplies.</span></p>
-		<p class="clmn-three-cntr details">Usually at the ambulance base, there is a supply closet that could supplement anything you did not obtain.</p>
-		<p class="clmn-three-rt details">If you set the app right, when they hit the 'Complete' button, it could <span class="bold dark">automatically print out in the office and go directly into the completed rig check file.</span></p>
-	</div>
-	<p class="accent">Ambulance equipment checks usually take around 1 - 2 hours in the beginning of the shift.</p>
-</section>
-<hr>
-<section>
-	<h4 class="header">Grid to Reduce Any Possible Errors</h4>
-	<p class="narrow passage">In Rig-it application, tapping any buttons that wasn't intended should be avoided. Accuracy in using the application is important for the ambulance equipment check to be thorough. Therefore, we designed the UI with only key functions, providing enough space for EMTs to tap on. Also, we grouped different functions in three sections of voice recognition, item information and item check.</p>
-	<img class="small" src="./rigit/rigit_grid.png" alt="Rig-it Grid Design">
-</section>
-<section>
-<div class="box">
-	<div id="process-btn" class="btn">
-		<p class="btn-page"><i class="fa fa-long-arrow-down" style="margin-right:12px;"></i>See more process</p>
-	</div>
-<div id="prcss">
-	<!-- Slider starts here -->
-	<div id="slider1_container" class="prcsssldr" style="position: relative; ">
-		<!-- Slides Container -->
-		<div u="slides" class="prcsssldr" style="position: absolute; overflow: hidden;">
-			<div>
-				<div class="prcsscntnt">
-					<h2>Phone interview</h2>
-					<p class="content">Through phone calls and an email survey, we could gather some information about Emergency Medical Technicians' daily life, which initiated our pitch idea.</p>
-				</div>
-				<img class="prcssimg" src="./rigit/rigit_p_notes2.jpg" alt="Phone Interview">
-			</div>
-			<div>
-				<div class="prcsscntnt">
-					<h2>Persona & Affinity diagram</h2>
-					<p class="content">Based on the persona that was given to our team, we created an Affinity diagram.</p>
-				</div>
-				<img class="prcssimg" src="./rigit/rigit_p_affinityclustering.jpg" alt="Affinity Diagram">
-			</div>
-			<div>
-				<div class="prcsscntnt">
-					<h2>Wireframe</h2>
-					<p class="content">Wireframe enabled us to test and communicate our design ideas like 'Thank you notes' and 'Replenish Item Lists' internally.</p>
-				</div>
-				<img class="prcssimg" src="./rigit/rigit_p_wireframe_comp.jpg" alt="Wireframe">
-			</div>
-		</div>
-		<!-- bullet navigator container -->
-		<div u="navigator" class="bb05">
-			<!-- bullet navigator item prototype -->
-			<div u="prototype"></div>
-			</div>
-			<!-- Arrow Left -->
-			<span u="arrowleft" class="ba12l" style="left: -60px;"><i class="fa fa-long-arrow-left"></i></span>
-			<!-- Arrow Right -->
-			<span u="arrowright" class="ba12r" style="right: -60px;"><i class="fa fa-long-arrow-right"></i></span>
-		</div>
-	</div>
-	<!-- Slider ends here -->
+	<h2>Functionality</h2>
+	<h3>Rig-it focuses on three key functions.</h3>
+	<p>Checklists are divided into a few sections based on the ambulance compartment. EMTs(Emergency Medical Technicians) go through each section, teamed up in two people. We provided the list based on these compartments. EMTs can jump between items or mark items as to be replenished.</p>
 </div>
-<div class="scrolltotop">&nbsp;&nbsp;<i class="fa fa-angle-up"></i></div>	
-</section>
+<div class="large">
+	<div class="clmn3"><img src="./rigit/rigit_i1.svg"><h4>Add to replenish item</h4><p class="support">This acts as a 'shopping' list for when they are going through the check.</p></div>
+	<div class="clmn3"><img src="./rigit/rigit_i2.svg"><h4>Check existing item</h4><p class="support">When a section has been completed, it will be grayed out, but the user can still click on it.</p></div>
+	<div class="clmn3"><img src="./rigit/rigit_i3.svg"><h4>Skip item to check later</h4><p class="support">Users can skip the item to bring this at the end of the list.</p></div>
+</div>
+<div class="full" style="padding:60px 0;background-color:#f7f7f7">
+<div>
+	<h3>Provide positive feedback loop</h3>
+	<p>One of the key insights that we learned from our user research was the lack of appreciation in EMTs works. Even though Emergency Medical Technicians were aware of the importance of their work, they were discouraged by people treating them as drivers. In addition, Emergency Medical Technicians were strongly tied into their community sharing their experiences. Motivated by this, we pitched the 'Send Thanks' function. This will also encourage the EMTs to help the next shifts to refill the items that they couldn't get replenished.</p>
+	<div class="left">
+		<figure>
+		<img src="./rigit/rigit_thanks.gif">
+		<figcaption><span class="accent">Send Thanks</span> On the Thanks Page, the user will be able to see the thank you messages from other EMT crew members. At the top, there is a count of the number of thanks that the user has received.</figcaption>
+		</figure>
+	</div>
+	<div class="right">
+		<figure>
+		<img src="./rigit/rigit_headsup.gif">	
+		<figcaption><span class="accent">Heads Up Item</span> Heades Up item lists are on the top of the list when the EMTs starts their shift and allows them to go through separate from the rest of the items.<!-- A Heads Up item has a faded out red background with the small title, in contrast to the white and gray background for regular items. This difference is meant to differentiate Heads Up items from regular items so that when working through a particular section the EMT will pay more attention to the Heads Up items. --></figcaption>
+		</figure>
+	</div>
+</div>
+</div>
+<div>
+	<h2>Research Process</h2>
+	<h3>Secondary Research</h3>
+	<p>To understand EMTs' daily bases works, we conducted online researches by joining their social networks, communities as well as watching videos explaining their works. We've got some insights after this basic research.</p>
+</div>
+<div>
+	<div class="left">
+		<h4>Long Downtimes</h4>
+		<p>Until when they receive a call from a 911 call taker, they have to wait. A lot of times EMTs are having a long downtimes, which they are suffering with.</p>
+	</div>
+	<div class="right">
+		<h4>Lack of Appreciation on EMTs</h4>
+		<p>Even though their job is crucial in saving people's lives, sometimes they are disappointed by people treating them as drivers.</p>
+	</div>
+</div>	
+<div>
+	<div class="left">
+		<h4>Strong EMT Communities</h4>
+		<p>There are a huge EMT communities online including local groups. They share their stories and articles related to their works and lives.</p>
+	</div>
+	<div class="right">
+		<h4>Tedious Equipment Check Process</h4>
+		<p>They spend the first 1-2 hours of shift with checking equipments in the ambulance, making sure all the required equipments are in place otherwise, they replenish them.</p>
+	</div>
+</div>
+<div>
+	<h3>Phone & E-mail Interviews</h3>
+	<p>To get an in-depth information about EMTs and Rig-Check procedure, I had an interview with a previous EMT from my connection. My team formed questions all together and narrowed them down to get good information in 20 minutes. Below are the insights that we got from the interview and the email questionnaire.</p>
+</div>
+<div class="large">
+	<div class="clmn3"><p class="support">I would like to change it up with rig checks meaning sometimes I would check the back and other days the front. This will help you be very comfortable with the ambulance you are in.</p></div>
+	<div class="clmn3"><p class="support">Usually, the checklist was set up in a system conducive to the way the compartments were set up so you did not have a scattered list. <span class="accent">It started at the back bottom compartment and ended with the front top compartment.</span></p></div>
+	<div class="clmn3"><p class="support">There were times that emergency calls interrupted your rig check, but afterwards, you would still have to complete it, it was part of the work assignment daily. Your crew chief would look for each of them daily.</p></div>
+</div>
+<div class="large">
+	<div class="clmn3"><p class="support">The rig check is done at the beginning of each shift. Usually at the ambulance base, there is a supply closet that could supplement anything you did not obtain.<span class="accent">It is up to the crew to replace ALL supplies.</p></div>
+	<div class="clmn3"><p class="support">If you set the app right, when they hit the 'Complete' button, it could <span class="accent">automatically print out in the office and go directly into the completed rig check file.</p></div>
+	<div class="clmn3"><p>Ambulance equipment checks usually take around 1 - 2 hours in the beginning of the shift.</p></div>
+</div>
+<div>
+	<h3>Grid to Increase Accuracy</h3>
+	<p>While designing Interface for Rig-it application, we wanted to make sure... tapping any buttons that wasn't intended should be avoided. Accuracy in using the application is important for the ambulance equipment check to be thorough. Therefore, we designed the UI with only key functions, providing enough space for EMTs to tap on. Also, we grouped different functions in three sections of voice recognition, item information and item check.</p>
+	<figure>
+		<img src="./rigit/rigit_grid.png">
+		<figcaption>Grid<figcaption>
+	</figure>
+</div>
+<div id="end">
+<p class="center">Read More of</p>
+<a href="./tempvis.html"><h5>Data Visualization</h5></a>
+</div>
 <footer>
-	<p id="copyright">Copyright 2015. Designed & Coded by Minjong Lee.
-	<br>Font faces: Lato & Roboto, Icons: Font Awesome</p>
+<p class="support">Copyright 2016. Designed & Coded from scratch by Minjong Lee. Font faces used in this website are <span class="accent">Lato</span> and <span class="accent">Open Sans</span>. Also plugged in <span class="accent">slick.js</span> and <span class="accent">typed.js</span> for little surprise!</p>
 </footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="./js/enquire.min.js"></script>
-<script type="text/javascript" src="./js/jssor.slider.mini.js"></script>
-<script>
-var jump = function(e) {
-	if (e) {
-		e.preventDefault();
-		var target = $(this).attr("href");
-	} else {
-		var target = location.hash;
-	}
-	// Animate scrolling
-	$('html, body').animate( {
-		// Get the top position of the target element
-		scrollTop: $(target).offset().top
-	},600,function() {
-		location.hash = target;
-	});
-}
-$(document).ready(function () {
-	// ** Fade the website in **
-	$('body').css('opacity', '0').fadeTo(600, 1, 'swing');
-	// ** Jump **
-	$('a[href^=#]').bind("click", jump);
-	if (location.hash) {
-		setTimeout(function() {
-			$('html, body').scrollTop(0).show();
-			jump();
-		}, 0);
-	} else {
-		$('html, body').show();
-	};
-	// ** Scroll Top, Process Button, Hide this **
-	$('.scrolltotop').click(function() {
-		$('html, body').animate({scrollTop : 0}, 1000);
-		return false;
-	});
-	$('#process-btn').click(function() {
-		$('#prcss').slideToggle('slow');
-	});
-
-	// ** Section detection ** //
-	function activated() {
-		var topMenu = $(".nav"),
-			topMenuHeight = topMenu.outerHeight() + 15,
-			//All list items
-			menuItems = topMenu.find("a"),
-			//Anchors corresponding to menu items
-			scrollItems = menuItems.map(function(){
-				var item = $($(this).attr("href"));
-				if (item.length) { return item; }
-			});
-			
-		//Bind to scroll
-		return $(window).scroll(function(){
-		//Get container scroll position
-		var fromTop = $(this).scrollTop()+topMenuHeight;
-		//Get id of current scroll item
-		var cur = scrollItems.map(function() {
-			if ($(this).offset().top < fromTop)
-				return this;
-			});
-		//Get the id of the current element
-		cur = cur[cur.length - 1];
-		var id = cur && cur.length ? cur[0].id : "";
-		//Set & remove active class
-		menuItems
-			.parent().removeClass("active")
-			.end().filter("[href=#" + id + "]").parent().addClass("active");
-		});
-	};
-	enquire.register("screen and (max-width:600px)", [
-		{ match : function () {
-		// ** Add mobile-nav icon ** //
-					$(function() {
-						var mobile = $('#mobile-nav');
-						var menu = $('.nav ul');
-						var menuHeight = menu.height();
-						mobile.off('click');
-						mobile.on('click', function(e) {
-							e.preventDefault();
-							menu.slideToggle();
-						});
-						$(window).resize(function() {
-							var w = $(window).width();
-							if (w > 600 && menu.is(':hidden')) {
-								menu.removeAttr('style');
-							}
-						});
-					});
-					$(function() {
-						var menu = $('.nav ul');
-						var navMain = $('header');
-						navMain.off('click');
-						navMain.on('click', 'a', null, function () {
-							menu.slideToggle();
-						});
-					});
-			} },
-		{ unmatch : function() { $("header").off('click'); } }
-	]);
-	enquire.register("screen and (min-width:601px)", [
-		{ match : function () {
-			// ** When scrolled underneath the intro, slide down the navigation **
-			//	$(window).on("scroll", function () {
-			//		$("header").toggleClass("bged", ($(window).scrollTop() > 799));
-			//	});
-	$(window).scroll(function(){
-		$('.delay1, .delay2, .delay3').each(function(i){
-			var duration = 400;
-			a = $(this).offset().top + $(this).height()/2;
-			b = $(window).scrollTop() + $(window).height();
-			if(a < b){
-				$(this).delay(i * (duration/2)).animate({
-					'top': '0px',
-					opacity: 1
-				}, duration);
-			}
-		});
-	 });				
-			
-			} }
-			
-	]);
-	activated();
-});
-</script>
-<script>
-	$(document).ready(function (i) {
-
-		var _SlideshowTransitions = [
-		//Fade
-		{ $Duration: 1200, $Opacity: 2 }
-		];
-
-		   var options = {
-
-			$ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-			$SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-			$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-			//$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-			//$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-			$SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
-			$DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-			$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-			$UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-			$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-			$DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-
-			$BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
-				$Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
-				$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-				$AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-				$Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-				$Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
-				$SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
-				$SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
-				$Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-			},
-
-			$ArrowNavigatorOptions: {
-				$Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
-				$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-				$Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
-			}
-		};
-		var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
-		//responsive code begin
-		//you can remove responsive code if you don't want the slider scales while window resizes
-		function ScaleSlider() {
-			var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
-			if (parentWidth)
-				jssor_slider1.$ScaleWidth(Math.min(parentWidth, 800));
-			else
-				window.setTimeout(ScaleSlider, 30);
-		}
-		ScaleSlider();
-
-		$(window).bind("load", ScaleSlider);
-		$(window).bind("resize", ScaleSlider);
-		$(window).bind("orientationchange", ScaleSlider);
-		//responsive code end
-	});
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src="./functions.js"></script>
 </body>
 </html>
