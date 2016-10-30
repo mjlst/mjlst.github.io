@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<title>Hello : ) I'm Minjong.</title>
+<link rel="icon" type="image/png" href="./general/favicon.png">
+<!-- Meta Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Not using fontawesome anymore -->
+<!-- Master stylesheet -->
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49851605-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div class="header">
+	<a href="./index.html"><h1 class="logo">Minjong Lee</h1></a><p class="support menuon">S'more</p>
+</div>
+<div class="menu">
+	<div class="off">
+		<svg width="23" height="24" viewBox="-77 163 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M-65.4 174l9.7-9.7.3-.3.4.3.6.7.4.3-.4.4-9.6 9.8 9.6 9.8.4.3-.4.4-.6.6-.4.4-.3-.4-9.7-9.8-9 9.2-.3.3-.3-.3-.7-.7-.3-.4.3-.4 9-9-9-9.3-.3-.3.3-.3.7-.7.3-.3.3.3 9 9z" fill-rule="evenodd" fill="#92bfce"/></svg>
+	</div>
+	<ul>
+		<li><a class="list" href="http://sigfig.com">SigFig</a></li>
+		<li><a class="list" href="./bookclip.html">Bookclip</a></li>
+		<li class="focus here"><a class="list" href="./rigit.html">Rig-it</a></li>
+		<li><a class="list" href="./tempvis.html">Data Vis</a></li>
+		<li><a class="list" href="./rivermatters.html">Rivermatters</a></li>
+<!-- 		<li><p class="list abouton">about</p></li> -->
+	</ul>
+	<img src="./sigfig.svg">
+	<img src="./bk_int.png">
+	<img src="./rigit/rigit.png">
+	<img src="./tempvis.png">
+	<img class="here" src="./rm_.png">
+<!-- 	<img src="./minj_prfl.png"> -->
+</div>
+<!-- 
+<div class="about">
+	<div class="off"><svg width="23" height="24" viewBox="-77 163 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M-65.4 174l9.7-9.7.3-.3.4.3.6.7.4.3-.4.4-9.6 9.8 9.6 9.8.4.3-.4.4-.6.6-.4.4-.3-.4-9.7-9.8-9 9.2-.3.3-.3-.3-.7-.7-.3-.4.3-.4 9-9-9-9.3-.3-.3.3-.3.7-.7.3-.3.3.3 9 9z" fill-rule="evenodd" fill="#92bfce"/></svg></div>
+	<div><p>Copies about Minjong Lee will be coming soon.</p></div>
+</div>
+ -->
+<div class="intro full center">
+	<h1 class="projectna center fadein">Ambulance Equipment Check Application</h1>
+	<p class="sub fadein">Rig-it</p>
+	<div>
+		<p class="tag">Research</p><p class="tag">Prototyping</p><p class="tag">iOS</p><p class="tag">Early 2015</p>
+	</div>
+</div>
+<div>
+	<h2>The Idea</h2>
+	<h3>How to improve ambulance equipment check process?</h3>
+	<p>Emergency Medical Technician's shift starts with 1-2 hours of ambulance equipment check. Missing any equipment can be critical in emergency situations. However, the check process is often done with a paper and a pen filled with long lists of items with checkboxes. Sometimes, they have no time to finish the check, and run to take care of their patients.</p>
+	<h3>1-2 hours of ambulance equipment check</h3>
+	<p>Rig-it aimed to streamline the process of checking both the equipment inside the main cab and the back of the ambulance, in addition to maintaining the vehicle itself.</p>
+
+	<h2>Final Deliverable</h2>
+	<figure>
+		<video class="vid" controls poster="./rigit/rigit_videoimage.png">
+			<source src="./rigit/rigit_walkthrough_opt.mp4" type="video/mp4">
+			<source src=".webm" type="video/webm">
+			<source src=".ogv" type="video/ogv">
+		</video>
+		<figcaption>Application Walkthrough</figcaption>
+	</figure>
+	<p>In addition to final walkthrough prototype, we put design document together for the application. This document explains target audience, purpose, functionality and backend requirements.</p>
+	<div class="center">
+		<a href="./rigit/rigit_designspec.pdf" target="_blank"><p class="cta">View Design Specification Document</p></a>
+	</div>
+	<h2>Functionality</h2>
+	<h3>Rig-it focuses on three key functions.</h3>
+	<p>Checklists are divided into a few sections based on the ambulance compartment. EMTs(Emergency Medical Technicians) go through each section, teamed up in two people. We provided the list based on these compartments. EMTs can jump between items or mark items as to be replenished.</p>
+</div>
+<div class="large">
+	<div class="clmn3"><img src="./rigit/rigit_i1.svg"><h4>Add to replenish item</h4><p class="support">This acts as a 'shopping' list for when they are going through the check.</p></div>
+	<div class="clmn3"><img src="./rigit/rigit_i2.svg"><h4>Check existing item</h4><p class="support">When a section has been completed, it will be grayed out, but the user can still click on it.</p></div>
+	<div class="clmn3"><img src="./rigit/rigit_i3.svg"><h4>Skip item to check later</h4><p class="support">Users can skip the item to bring this at the end of the list.</p></div>
+</div>
+<div class="full" style="padding:60px 0;background-color:#f7f7f7">
+<div>
+	<h3>Provide positive feedback loop</h3>
+	<p>One of the key insights that we learned from our user research was the lack of appreciation in EMTs works. Even though Emergency Medical Technicians were aware of the importance of their work, they were discouraged by people treating them as drivers. In addition, Emergency Medical Technicians were strongly tied into their community sharing their experiences. Motivated by this, we pitched the 'Send Thanks' function. This will also encourage the EMTs to help the next shifts to refill the items that they couldn't get replenished.</p>
+	<div class="left">
+		<figure>
+		<img src="./rigit/rigit_thanks.gif">
+		<figcaption><span class="accent">Send Thanks</span> On the Thanks Page, the user will be able to see the thank you messages from other EMT crew members. At the top, there is a count of the number of thanks that the user has received.</figcaption>
+		</figure>
+	</div>
+	<div class="right">
+		<figure>
+		<img src="./rigit/rigit_headsup.gif">	
+		<figcaption><span class="accent">Heads Up Item</span> Heades Up item lists are on the top of the list when the EMTs starts their shift and allows them to go through separate from the rest of the items.<!-- A Heads Up item has a faded out red background with the small title, in contrast to the white and gray background for regular items. This difference is meant to differentiate Heads Up items from regular items so that when working through a particular section the EMT will pay more attention to the Heads Up items. --></figcaption>
+		</figure>
+	</div>
+</div>
+</div>
+<div>
+	<h2>Research Process</h2>
+	<h3>Secondary Research</h3>
+	<p>To understand EMTs' daily bases works, we conducted online researches by joining their social networks, communities as well as watching videos explaining their works. We've got some insights after this basic research.</p>
+</div>
+<div>
+	<div class="left">
+		<h4>Long Downtimes</h4>
+		<p>Until when they receive a call from a 911 call taker, they have to wait. A lot of times EMTs are having a long downtimes, which they are suffering with.</p>
+	</div>
+	<div class="right">
+		<h4>Lack of Appreciation on EMTs</h4>
+		<p>Even though their job is crucial in saving people's lives, sometimes they are disappointed by people treating them as drivers.</p>
+	</div>
+</div>	
+<div>
+	<div class="left">
+		<h4>Strong EMT Communities</h4>
+		<p>There are a huge EMT communities online including local groups. They share their stories and articles related to their works and lives.</p>
+	</div>
+	<div class="right">
+		<h4>Tedious Equipment Check Process</h4>
+		<p>They spend the first 1-2 hours of shift with checking equipments in the ambulance, making sure all the required equipments are in place otherwise, they replenish them.</p>
+	</div>
+</div>
+<div>
+	<h3>Phone & E-mail Interviews</h3>
+	<p>To get an in-depth information about EMTs and Rig-Check procedure, I had an interview with a previous EMT from my connection. My team formed questions all together and narrowed them down to get good information in 20 minutes. Below are the insights that we got from the interview and the email questionnaire.</p>
+</div>
+<div class="large">
+	<div class="clmn3"><p class="support">I would like to change it up with rig checks meaning sometimes I would check the back and other days the front. This will help you be very comfortable with the ambulance you are in.</p></div>
+	<div class="clmn3"><p class="support">Usually, the checklist was set up in a system conducive to the way the compartments were set up so you did not have a scattered list. <span class="accent">It started at the back bottom compartment and ended with the front top compartment.</span></p></div>
+	<div class="clmn3"><p class="support">There were times that emergency calls interrupted your rig check, but afterwards, you would still have to complete it, it was part of the work assignment daily. Your crew chief would look for each of them daily.</p></div>
+</div>
+<div class="large">
+	<div class="clmn3"><p class="support">The rig check is done at the beginning of each shift. Usually at the ambulance base, there is a supply closet that could supplement anything you did not obtain.<span class="accent">It is up to the crew to replace ALL supplies.</p></div>
+	<div class="clmn3"><p class="support">If you set the app right, when they hit the 'Complete' button, it could <span class="accent">automatically print out in the office and go directly into the completed rig check file.</p></div>
+	<div class="clmn3"><p>Ambulance equipment checks usually take around 1 - 2 hours in the beginning of the shift.</p></div>
+</div>
+<div>
+	<h3>Grid to Increase Accuracy</h3>
+	<p>While designing Interface for Rig-it application, we wanted to make sure... tapping any buttons that wasn't intended should be avoided. Accuracy in using the application is important for the ambulance equipment check to be thorough. Therefore, we designed the UI with only key functions, providing enough space for EMTs to tap on. Also, we grouped different functions in three sections of voice recognition, item information and item check.</p>
+	<figure>
+		<img src="./rigit/rigit_grid.png">
+		<figcaption>Grid<figcaption>
+	</figure>
+</div>
+<div id="end">
+<p class="center">Read More of</p>
+<a href="./tempvis.html"><h5>Data Visualization</h5></a>
+</div>
+<footer>
+<p class="support">Copyright 2016. Designed & Coded from scratch by Minjong Lee. Font faces used in this website are <span class="accent">Lato</span> and <span class="accent">Open Sans</span>. Also plugged in <span class="accent">slick.js</span> and <span class="accent">typed.js</span> for little surprise!</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src="./functions.js"></script>
+</body>
+</html>

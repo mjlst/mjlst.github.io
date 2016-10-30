@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<title>Hello : ) I'm Minjong.</title>
+<link rel="icon" type="image/png" href="./general/favicon.png">
+<!-- Meta Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Not using fontawesome anymore -->
+<!-- Master stylesheet -->
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49851605-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Project timeline styling 1/4-->
+	<style>
+	.package {
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	}
+	.stacks, .bars {
+	stroke-width: .5;
+	stroke: #73777d;
+	shape-rendering: crispEdges;
+	rx: 2;
+	ry: 2;
+	}
+	.tips, .taps {
+	width: 140px;
+	padding: 18px;
+	line-height: 1.5em;
+	border-radius: 4px;
+	background-color: #56595e;
+	position: absolute;
+	color: #fff;
+	}
+	.tips:after, .taps:after{
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #56595e;
+	border-width: 5px;
+	margin-left: -5px;
+	}
+	.lined {
+	fill: #f9f9f9;
+	stroke: #73777d;
+	shape-rendering: crispEdges;
+	}
+	.grid .tick {
+	stroke: rgba(115, 119, 125, 1);
+	stroke-opacity: 0.7;
+	shape-rendering: crispEdges;
+	stroke-width:.5; 
+	stroke-dasharray: 2, 2;
+	}
+	.grid path {
+	stroke: rgba(115, 119, 125, 1);
+	stroke-width: 0;
+	}
+	.axis path,
+	.axis line {
+	fill: none;
+	stroke: #73777d;
+	shape-rendering: crispEdges;
+	}
+	.axis text, .tips, .taps {
+	font-family: 'Lato', sans-serif;
+	font-size: .6em;
+	}
+	.axis text {
+	fill:#73777d;
+	}
+	</style>
+<!-- Project timeline styling -->
+</head>
+<body>
+<div class="header">
+	<a href="./index.html"><h1 class="logo">Minjong Lee</h1></a><p class="support menuon">S'more</p>
+</div>
+<div class="menu">
+	<div class="off">
+		<svg width="23" height="24" viewBox="-77 163 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M-65.4 174l9.7-9.7.3-.3.4.3.6.7.4.3-.4.4-9.6 9.8 9.6 9.8.4.3-.4.4-.6.6-.4.4-.3-.4-9.7-9.8-9 9.2-.3.3-.3-.3-.7-.7-.3-.4.3-.4 9-9-9-9.3-.3-.3.3-.3.7-.7.3-.3.3.3 9 9z" fill-rule="evenodd" fill="#92bfce"/></svg>
+	</div>
+	<ul>
+		<li><a class="list" href="http://sigfig.com">SigFig</a></li>
+		<li><a class="list" href="./bookclip.html">Bookclip</a></li>
+		<li><a class="list" href="./rigit.html">Rig-it</a></li>
+		<li><a class="list" href="./tempvis.html">Data Vis</a></li>
+		<li class="focus here"><a class="list" href="./rivermatters.html">Rivermatters</a></li>
+<!-- 		<li><p class="list abouton">about</p></li> -->
+	</ul>
+	<img src="./sigfig.svg">
+	<img src="./bk_int.png">
+	<img src="./rigit/rigit.png">
+	<img src="./tempvis.png">
+	<img class="here" src="./rm_.png">
+<!-- 	<img src="./minj_prfl.png"> -->
+</div>
+<!-- 
+<div class="about">
+	<div class="off"><svg width="23" height="24" viewBox="-77 163 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M-65.4 174l9.7-9.7.3-.3.4.3.6.7.4.3-.4.4-9.6 9.8 9.6 9.8.4.3-.4.4-.6.6-.4.4-.3-.4-9.7-9.8-9 9.2-.3.3-.3-.3-.7-.7-.3-.4.3-.4 9-9-9-9.3-.3-.3.3-.3.7-.7.3-.3.3.3 9 9z" fill-rule="evenodd" fill="#92bfce"/></svg></div>
+	<div><p>Copies about Minjong Lee will be coming soon.</p></div>
+	</div>
+</div>
+ -->
+<div class="intro full center">
+	<h1 class="projectna center fadein">Marketing Website for H2Oh! exhibition</h1>
+	<p class="sub clr fadein">Rivermatters</h1>
+	<div>
+		<p class="tag">Web</p><p class="tag">Late 2014</p>
+	</div>
+</div>
+<div class="full">
+	<img src="./rm_bg_.png">
+</div>
+<div>
+	<h2>About Rivermatters Project</h2>
+	<p>Rivermatters is physical and digital city planning game that markets upcoming exhibition, H2Oh! Carnegie Science Center. The goal of RiverMatters project was to enable students and visitors of Carnegie Science Center to explore and understand different needs of city departments and consequences of their action.</p>
+	<h2>First Deliverable</h2>
+	<h3>Webgame for home</h3>
+	<p>Rivermatters web game enables a visitor to explore and plan out the city individually. To transform 4 player game into 1 payer game, we changed the goal. In the physical board game, the educational goal was to allow students to discuss and cooperate, in the online game, the goal was to let the visitors to experiment and learn. To engage visitors, we implemented the scoreboard on the top right corner.</p>
+	<div class="center">
+		<a class="targetblank" href="http://54.175.30.133/intro/gameQuickIn" target="_blank"><p class="cta">Try out River Matters online game</p></a>
+	</div>
+</div>
+<div class="full">
+	<figure>
+		<img src="./rivermatters/rm_introimage.jpg">
+		<figcaption>Student testing the Rivermatters game. The screen is composed for better presentation.</figcaption>
+	</figure>
+</div>
+<div>
+	<div class="left">
+		<h3>Dashboard for the Staff Members</h3>
+		<p>We integrated the board game into the Rivermatters website, bundled with a client side dashboard application. This was to allow museum staffs to open competitions and manage rewards as marketing events. Also, with this dashboard, the staffs were able to track the number of website visitors, game players, and the winner of each competition.</p>
+	</div>
+	<div class="right">
+		<img src="./rivermatters/rm_structure.png">
+	</div>
+</div>
+<div>
+	<h2>Second Deliverable</h2>
+	<h3>Boardgames for the Classroom</h3>
+	<p>One of the product designed for the classroom was a board game that generates a space where students to discuss and express their opinion. We designed the game consists of four different roles of City Planning Department, Industry Department, Environment Protection Department and Water Resource Department. Four students are formed as a team, representing each department roles. In the game, students are asked to come up with one design plan that scores the most.</p>
+	<figure>
+		<img src="./rivermatters/rm_physicalboard.png">
+		<figcaption>Final Version of the Boardgame</figcaption>
+	</figure>
+	<figure>
+		<img src="./rivermatters/rm_gamephysical.svg">
+		<figcaption>What's inside of this boardgame?</figcaption>
+	</figure>
+	<p>In middle school, classes take about 40-50 minutes and teachers use 10-15 minutes to wrap up the class. While we were testing the product with students, we spent full 20 minutes just to explain the game. To reduce this time and to provide teachers time to wrap up the class, we created tutorial video. As a result, students could fully understand the game after watching the tutorials for 6 minutes. While developing the tutorial video, we also learned that students focuses more closely into each specific rules when their roles were called individually.</p>
+	<div class="selection">
+		<div class="center"><p class="option this">Tutorial Video</p><p class="option">Event Video</p></div>
+		<figure class="selected"> 
+			<video class="vid" controls poster="./rivermatters/rm_videoimage2.jpg">
+				<source src="./rivermatters/rm_video_tutorial_opt.mp4" type="video/mp4">
+			</video>
+			<figcaption>Tutorial Video</figcaption>
+		</figure>
+		<figure>
+			<video class="vid" controls poster="./rivermatters/rm_videoimage.jpg">
+				<source src="./rivermatters/rm_video_event_opt.mp4" type="video/mp4">
+			</video>
+			<figcaption>Event Video</figcaption>
+		</figure>
+	</div>
+</div>
+<div>
+	<h3>In the beginning...</h3>
+	<p>Our project started with having a conversation with our client, Carnegie Science Center. We met the staff members including the director, exhibition designer, and education initiatives. Our questions were formed to understand their mission and their target demographic. Broadly, Carnegie Science Center was looking for an experience which can market their upcoming exhibition H2Oh! for their main target demographic, middle School students, and general museum visitors.</p>
+	<!-- Project timeline html 2/4-->
+	<p>After the conversation, we roughly planned out our process. Even though we went through 2 more design sprints and 4 more small design projects than we expected, this timeline guided us to track and validate our sprints. We also adjusted our timeline as we go to make sure we were designing for necessity.</p>
+	<h2>Project Timeline</h2>
+	<p>Hover over on the bars to see detailed information.</p>
+	<div class="center selection"><p class="option this" id="timeline">Timeline</p><p class="option" id="timesum">Total Time Spent</p></div>
+	<div class="package">
+	</div>
+	<!-- Project timeline html 2/4-->
+	<h3>Who are we designing for?</h3><!-- Target Demographic -->
+	<p>During our meetings, Staff members of Carnegie Science Center mentioned that their main visitors were school students and teachers who were coming for field trips. Also, school teachers were looking for class materials related to the museum visits. Some visitors came in for a family gathering, usually with children aged 5-10. Based on this meeting, we decided to focus on school field trip experience.</p>
+</div>
+<div class="large">
+	<div class="clmn3"><img class="half" src="./rivermatters/rm_target_csc.png"><h4>Carnegie Science Center</h4><p class="support">We want a piece that can market our upcoming exhibition, H2Oh!</p></div>
+	<div class="clmn3"><img class="half" src="./rivermatters/rm_target_teacher.png"><h4>School Teachers</h4><p class="support">Schools have technological barriers and the pieces need to fit in educational standards.</p></div>
+	<div class="clmn3"><img class="half" src="./rivermatters/rm_target_visitor.png"><h4>Museum Visitors</h4><p class="support">We want a unique experience as a family as well as information about the exhibition.</p></div>
+</div>
+<div>
+	<p>Thanks to help from the Carnegie Science Center, arranging meetings with students and teachers, we were able to interview with three different middle school teachers, sharing our ideas and talking about things to consider designing course materials. Here, we learned that there were some restrictions on providing materials to the students. As we went through the interview, we adjusted our designs so that it could be presented to the students at the end of the day. Below are the three main insights from the interviews.</p>
+	<p><span class="accent">Technology barrier</span>: During the interview with middle school teachers we found out that it is not always possible to bring newest technology inside the classroom.</p>
+	<p><span class="accent">Time Constraint</span>: The class usually takes around 40 to 50 minutes including roll calls, instructions and lessons learned. Therefore, the experience had to be within 30 minutes.</p>
+	<p><span class="accent">Educational Standard</span>: The contents needed to be built under educational standards in order to be introduced to the students in the classroom. There were several educational standards that were suggested by Carnegie Science Center.</p>
+	<h2>Usability Testing</h2>
+	<p>At the end of each design sprint, we conducted testing with students. Eventually, we conducted 5 different user testing sessions with 24 users including our target demographic. The first two sessions were to test user engagements and the last three sessions were to test prototypes and receive feedbacks. Students don't participate if they don't find the product interesting. Since we were designing a game for groups, we needed to make sure that the game is engaging so that everyone can actively participate in the game. In the latter sessions, we were looking for usability issues when students interacting with our prototypes, to iterate on the detailed interactions.</p>
+	<figure>
+		<img src="./rivermatters/rm_usertesting.png">
+		<figcaption>Usability Testing @Elizabeth High School</figcaption>
+	</figure>
+</div>
+<div id="end">
+<p class="center">Next, Read More of</p>
+<a href="./bookclip.html"><!-- Later Update to SigFig --><h5>Bookclip</h5></a>
+</div>
+<footer>
+<p class="support">Copyright 2016. Designed & Coded from scratch by Minjong Lee. Font faces used in this website are <span class="accent">Lato</span> and <span class="accent">Open Sans</span>. Also plugged in <span class="accent">slick.js</span> and <span class="accent">typed.js</span> for little surprise!</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src="./functions.js"></script>
+<!-- Project timeline d3js 3/4 -->
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+$(document).ready(function () {
+var dataset = [
+{rry: 0, name: 'communication', content: 'Project Scope', level:2, start: '08/25/2014', end: '09/02/2014'},
+{rry: 0, name: 'communication', content: 'Client side project discussion', level:2, start: '10/20/2014', end: '10/30/2014'},
+{rry: 0, name: 'communication', content: 'Dashboard pitch', level:7, start: '11/21/2014', end: '11/25/2014'},
+{rry: 1, name: 'ideation', content: 'Ideation with client', level:8, start: '08/25/2014', end: '08/29/2014'},
+{rry: 1, name: 'ideation', content: 'Side project : board game', level:8, start: '09/15/2014', end: '09/19/2014'},
+{rry: 1, name: 'ideation', content: 'Dashboard idea', level:8, start: '11/10/2014', end: '11/14/2014'},
+{rry: 2, name: 'research', content: 'Field research', level:4, start: '09/01/2014', end: '09/04/2014'},
+{rry: 2, name: 'research', content: 'Clients & Museum visitor interview @CSC', level:10, start: '09/01/2014', end: '09/06/2014'},
+{rry: 2, name: 'research', content: 'School Faculty Interview @Elizabeth Forward', level:10, start: '09/17/2014', end: '09/20/2014'},
+{rry: 2, name: 'research', content: 'Affinity diagram & Persona', level:10, start: '09/22/2014', end: '10/07/2014'},
+{rry: 2, name: 'research', content: 'Secondary Research', level:10, start: '09/29/2014', end: '10/17/2014'},
+{rry: 3, name: 'design', content: 'Game design', level:6, start: '09/01/2014', end: '09/05/2014'},
+{rry: 3, name: 'design', content: 'Game design : instruction iteration', level:6, start: '09/08/2014', end: '09/22/2014'},
+{rry: 3, name: 'design', content: 'Homepage flow & wireframing', level:6, start: '09/18/2014', end: '09/26/2014'},
+{rry: 3, name: 'design', content: 'User Interface', level:3, start: '09/15/2014', end: '09/26/2014'},
+{rry: 3, name: 'design', content: 'Side project graphic design', level:2, start: '10/06/2014', end: '10/17/2014'},
+{rry: 3, name: 'design', content: 'Client side dashboard', level:7, start: '11/17/2014', end: '11/28/2014'},
+{rry: 4, name: 'testing', content: 'Flow audit @CMU', level:4, start: '09/18/2014', end: '09/22/2014'},
+{rry: 4, name: 'testing', content: 'First draft of the game @CSC', level:4, start: '09/22/2014', end: '09/26/2014'},
+{rry: 4, name: 'testing', content: 'Usability testing @CMU', level:4, start: '10/10/2014', end: '10/14/2014'},
+{rry: 4, name: 'testing', content: 'Interface usability @Elizabeth Forward', level:4, start: '11/10/2014', end: '11/14/2014'},
+{rry: 4, name: 'testing', content: 'Game Instruction @Elizabeth Forward', level:4, start: '11/17/2014', end: '11/21/2014'},
+{rry: 4, name: 'testing', content: 'Dashboard usability @CSC', level:7, start: '12/01/2014', end: '12/05/2014'},
+{rry: 5, name: 'development', content: 'Backend development', level:7, start: '09/08/2014', end: '09/19/2014'},
+{rry: 5, name: 'development', content: 'Game programming', level:7, start: '09/22/2014', end: '10/10/2014'},
+{rry: 5, name: 'development', content: 'Webpage integration', level:7, start: '10/13/2014', end: '10/24/2014'},
+{rry: 5, name: 'development', content: 'Frontend development', level:7, start: '10/27/2014', end: '11/26/2014'},
+{rry: 5, name: 'development', content: 'Project migration', level:7, start: '12/09/2014', end: '12/12/2014'}], 
+names = ['communication', 'ideation', 'research', 'design', 'testing', 'development'],
+tBegin = '01/01/2015',
+tEnd = '05/01/2015'
+
+var starting = function(d) {return d.start;},
+	ending = function(d) {return d.end;}
+
+var color = d3.scale.ordinal()
+	.range(["#ffff00", "#b5ff00","#00ff91", "#00fff2", "#00e1ff", "#00aaff"])
+
+color.domain(['communication', 'ideation', 'research', 'design', 'testing', 'development']);
+
+var w = 800,
+	h = 300,
+    m = [40, 40, 40, 100], /* top[0] right[1] bottom[2] left[3]*/
+    p = 40,
+    g = 20,
+	barHeight = 20,
+	t = 8	
+	
+var width = w - m[1] - m[3],
+	height = h - m[0] - m[2]
+
+var y = d3.scale.ordinal()
+		.range([height*1/6+g, height*2/6+g, height*3/6+g, height*4/6+g, height*5/6+g, height+g]),
+	x = d3.time.scale()
+		.range([g, width-g]);
+
+var dateFormat = d3.time.format('%m/%d/%Y'), 
+	parse = dateFormat.parse;
+
+x.domain([d3.min(dataset, function(dataset) {return parse(dataset.start);}),
+			d3.max(dataset, function(dataset) {return parse(dataset.end);}) ])
+
+y.domain(names)
+
+var yAxis = d3.svg.axis()
+			.scale(y)
+			.orient('left')
+			.ticks(t)
+			.tickValues(names);
+
+var xAxis = d3.svg.axis()
+			.scale(x)
+			.orient('top')
+			.ticks(t)
+			.tickFormat(d3.time.format('%b %d'));
+
+var svg = d3.select('.package').append('svg')
+		.attr('width', width + m[1] + m[3])
+		.attr('height', height + m[0] + m[2])
+		.append('g')
+		.attr('transform', 'translate(' + m[3] + ',' + m[0] + ')');
+
+var tips = d3.select('.package').append('div')
+		.attr('class', 'tips')
+		.style('opacity', 0);
+
+var taps = d3.select('.package').append('div')
+		.attr('class', 'taps')
+		.style('opacity', 0);
+
+svg.append('rect')
+	.attr('class', 'lined')
+	.attr('width', width)
+	.attr('height', height-1)
+	.attr('transform', 'translate(0' + ',' + m[0] + ')');
+
+svg.append('g')
+	.attr('class', 'x axis')
+	.attr('transform', 'translate(' + 0 + ',' + m[0] + ')')
+	.call(xAxis);
+	
+svg.append('g')
+	.attr('class', 'y axis')
+	.attr('transform', 'translate(' + 0 + ',' + 0 + ')')
+	.call(yAxis);
+
+var xGrid = function(dataset) {
+	return d3.svg.axis()
+		.scale(x)
+		.orient('top')
+		.ticks(t);}
+
+var yGrid = function(d) {
+	return d3.svg.axis()
+		.scale(y)
+		.orient('left')
+		.ticks(t);}
+
+svg.append('g')
+	.attr('class', 'grid')
+	.attr('transform', 'translate(' + 0 + ',' + m[0] + ')')
+	.call(xGrid()
+			.tickSize(-height, 0, 0)
+			.tickFormat(""))
+		
+svg.append('g')
+	.attr('class', 'grid')
+	.attr('transform', 'translate(0,' + 0 + ')')
+	.call(yGrid()
+		.tickSize(-width, 0, 0)
+		.tickFormat(""))
+
+var chart = svg.append('g').selectAll('rect.bars')
+	.data(dataset)
+	.enter().append('rect')
+	.attr('class', 'bars')
+	.attr('data-name',  function(d) {return d.name;})
+	.attr('x', function(d) {return x(parse(d.start));})
+	.attr('width', 0)
+	.attr('height', barHeight)
+	.attr('y', function(d) { return y(d.rry)-barHeight/2;})
+	.attr('fill', function(d) {return color(d.name);})
+	.style('opacity', 0.6)
+	.on('mouseover', function(d, i) {
+	
+		tips.transition()
+			.style('opacity', 1)
+			.duration(200);
+
+		tips.html('Start Date&nbsp;&nbsp;' + d.start + '<br> End Date&nbsp;&nbsp;&nbsp;&nbsp;' + d.end + '<br><span style=" color:'+ color(d.name) +';font-weight:400;">' + d.content + '</span>')
+			.style('left', (x(parse(d.start)) + ( x(parse(d.end)) - x(parse(d.start)) )/2 + p/2) + 'px')
+			.style('top', (y(d.rry) + barHeight*2 + g) + 'px'); 
+
+		var myDataName = $(this).attr('data-name');
+
+		$('rect.bars').siblings('[data-name="' + myDataName + '"]').animate({opacity: 1}, 200);
+		$('rect.bars').not('[data-name="' + myDataName + '"]').animate({opacity: .2}, 200);		
+	})
+	.on('mouseout', function(d) {
+		tips.transition()
+			.style('opacity', 0)
+			.duration(200);
+
+		$('rect.bars').css('opacity', .6);
+	});
+
+chart.transition()
+	.attr('width', function(d) {return x(parse(d.end)) - x(parse(d.start));})
+	.delay(function(d, i) { return i * (500 / dataset.length);})
+	.ease('elastic')
+	.duration(800);
+
+/* Total time spent */
+var nameSum = 
+d3.nest()
+	.key(function(d) {return d.name;})
+	.rollup(function(v) { return {
+		width: d3.sum(v, function(d) {return x(parse(d.end)) - x(parse(d.start));}),
+		count: d3.sum(v, function(d) {return Math.round(Math.abs((parse(d.start).getTime() - parse(d.end).getTime()) / (1000*60*60*24))) })
+		}
+	})
+	.entries(dataset);
+
+var totalTimeSpent = 
+svg.append('g').selectAll('rect.stacks')
+	.data(nameSum)
+	.enter().append('rect')
+	.attr('class', 'stacks')
+	.attr('x', 0)
+	.attr('data-name', function(d) {return d.key;})
+	.attr('y', function(d, i) { return y(d.key)-barHeight/2;})
+	.attr('width', 0)
+	.attr('height', barHeight)
+	.attr('fill', function(d) {return color(d.key);})
+	.attr('opacity', .6)
+	.on('mouseover', function(d, i) {
+			taps.transition()
+				.style('opacity', 1)
+				.duration(50);
+
+			taps.html('Time spent&nbsp;:&nbsp;' + nameSum[i].values.count + '&nbsp;Days')
+				.style('left',(nameSum[i].values.width + m[3] + g) + 'px')
+				.style('top', (y(d.key) + barHeight +1) + 'px'); 
+				
+			var myDataName = $(this).attr('data-name');
+			console.log(myDataName);
+			$('rect.stacks').siblings('[data-name="' + myDataName + '"]').animate({opacity: 1}, 200);
+			$('rect.stacks').not('[data-name="' + myDataName + '"]').animate({opacity: .2}, 200);
+	})
+	.on('mouseout', function(d) {
+			taps.transition()
+				.style('opacity', 0)
+				.duration(200);
+	$('rect.stacks').css('opacity', .6);
+	});
+
+$('#timeline').on('click', function(d) {
+	d3.selectAll('rect.stacks')
+	.transition()
+	.attr('width', 0)
+	.delay(function(d, i) {return i * (500 / nameSum.length);})
+	.ease('cubic')
+	.duration(200);
+chart.transition()
+	.attr('width', function(d) {return x(parse(d.end)) - x(parse(d.start));})
+	.delay(function(d, i) { return i * (500 / dataset.length);})
+	.ease('elastic')
+	.duration(800);	
+});
+
+$('#timesum').on('click', function(d) {
+	d3.selectAll('rect.bars')
+		.transition()
+		.attr('width', 0)
+		.delay(function(d, i) {return i * (500 / dataset.length);})
+		.ease('cubic')
+		.duration(200);
+	totalTimeSpent.transition()
+		.attr('width', function(d, i) { return nameSum[i].values.width;})
+		.delay(function(d, i) { return i * (500 / nameSum.length);})
+		.ease('elastic')
+		.duration(800);	
+});
+// Project timeline d3js 3/4
+});
+$('.clr').css({
+	'color': '#E8BC54'
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,741 @@
+/* Adding reset.css Here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+font-size: 20px;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+body.index {
+background: linear-gradient(#fff 32%, #f2f2f1 40%);
+background: -webkit-linear-gradient(#fff 32%, #f2f2f1 40%);
+}
+h1, p.philmo, h3, h2 {
+display: block;
+margin: .5em auto;
+}
+/* Apply Single Styling to multiple elements */
+.list, figcaption, p.sclblrb, p.support, .months, .input, h4/* for data vis */, h5, p.philmo, h1, p.sub, h2, h3, .font1, .font2 {
+font-family: 'Lato', sans-serif;
+}
+div.scl, #sclblk, .selection, .selection > div, .right.gallery, .left.gallery {
+overflow: visible;
+}
+body, .fadein, figcaption.title, figcaption.main, .list:before, .menu > ul > li, #sclblk, .right.gallery, .left.gallery, .input:before, p.sclblrb, .menu > img, .logo, .menuon {
+opacity: 0;
+}
+
+h1.logo {
+display: inline-block;
+font: 700 .8em 'Lato', sans-serif;
+letter-spacing: 1;
+text-transform: uppercase;
+color: #000;
+z-index: 5;
+}
+.logo, .menuon {
+display: inline-block;
+position: relative;
+margin: 0;
+text-transform: uppercase;
+}
+.menu > img {
+position: absolute;
+left:0;
+bottom:0;
+}
+.menu > img.here {
+opacity: 1;
+}
+.about > div.off, .off {
+cursor: pointer;
+width: 92%;
+position: absolute;
+bottom: 0;
+top: 0;
+text-align: right;
+margin-top: auto;
+margin-bottom: auto;
+display: table;
+z-index: 100;
+opacity: .4;
+transition: all .35s;
+-webkit-transition: all .35s;
+}
+.off:hover {
+opacity: 1;
+}
+.header {
+width: 100%;
+padding: 20px;
+height: 20px;
+margin: 0;
+position: fixed;
+z-index: 10;
+background: linear-gradient(to bottom, #fff, rgba(255,255,255,0));
+background: -webkit-linear-gradient(to bottom, #fff, rgba(255,255,255,0));
+}
+.bar {
+padding: 1% 2%;
+width: 96%;
+position: fixed;
+}
+.bar > a > svg {
+float: right;
+}
+p.philmo {
+margin-top: 4em;
+margin-bottom: .4em;
+font-family: 'PT Serif', serif;
+font-size: 2.4em;
+line-height: 1.6em;
+color: #4C4F58;
+}
+p.philmo:before {
+display: block;
+position: relative;
+width: 10%;
+content: "";
+height: 2px;
+background: #000;
+margin: 1em 0;
+}
+h1 {
+text-align: center;
+font-size: 2em;
+line-height: 1.8em;
+margin-bottom: 1.6em;
+}
+figure {
+position: relative;
+}
+h1.projectna {
+font-family: 'PT Serif', serif;
+color:#4c4f58;
+margin-top: 6em;
+}
+h1.projectna:after {
+display: block;
+position: relative;
+width: 4%;
+content: "";
+height: 1px;
+background: #000;
+margin: 1em auto;
+}
+h1.projectna.fff:after {
+background: #fff;
+}
+figcaption.main, p.sub {
+font-size: 1em;
+color: #4C4F58;
+margin-bottom: 4em;
+}
+p.sub {
+line-height: 1.6em;
+margin-bottom:0;
+}
+figcaption, p.sclblrb, p.support, .months, .input, h4/* for data vis */ {
+font-size: .8em;
+line-height: 1.6em;
+color: #2E2F31;
+margin-bottom: 2em;
+}
+
+.intro > .sub, figcaption.title, h2 {
+margin-bottom: .8em;
+font-size: 1em;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: .2em;
+}
+.intro > .sub {
+color: #78828c;
+}
+h2 {
+color: #92bfce;
+margin: 4em 0 1em 0;
+line-height: 1.8em;
+}
+h3 {
+margin: 1em 0 .4em;
+font-size: 1em;
+line-height: 1.4em;
+font-weight: 700;
+color: #78828C;
+}
+h4 {
+color: #78828C;
+margin-bottom: .4em;
+}
+h5 {
+margin: 1em 0 2.4em 0;
+font-size: 2em;
+font-weight: 400;
+text-align: center;
+color: #92bfce;
+}
+div#end {
+margin-top:4em;
+}
+p {
+font-family: 'PT Serif', sans-serif;
+font-size: 1em;
+line-height: 1.8em;
+color: #2E2F31;
+margin-bottom: 2em;
+}
+p.support {
+color: #4C4F58;
+}
+div > div.clmn3 > h3 {
+margin-bottom: .4em;
+}
+.font1, .font2 {
+font-size: .5em;
+line-height: 1.1em;
+color: #2E2F31;
+}
+.scl > a > svg {
+position: absolute;
+}
+.sclcircle {
+width:44px;
+height:44px;
+border-radius: 50%;
+position: absolute;
+left:26px;
+top: 26px;
+z-index: -1;
+background-color: none;
+}
+figcaption {
+max-width: 800px;
+margin: auto;
+margin-bottom: 2em;
+}
+p.sclblrb {
+width: 260px;
+top: -24px;
+left: -100px;
+right: 0;
+bottom: 0;
+position: absolute;
+text-align: center;
+}
+.input, p.option {
+display: inline-block;
+position: relative;
+margin: 0 2em 2em 0;
+font: 400 1em 'Lato', sans-serif;
+transition: all .2s;
+-webkit-transition: all .2s;
+cursor: pointer;
+}
+.on, p.this {
+color: #92bfce;
+}
+p.cta {
+display: inline-block;
+position: relative;
+padding: .8em 1.6em;
+margin: 0 auto 2em auto;
+border-radius: .2em;
+box-shadow: 0 1px 8px rgba(0,0,0,.2);
+background-color: #FF5757;
+font: 700 .8em 'Lato', sans-serif;
+letter-spacing: .1em;
+text-transform: uppercase;
+color:#fff;
+-webkit-transition: all, 0.1s;
+transition: all, 0.1s;
+}
+p.cta:hover {
+margin: .1em auto 1.9em auto;
+box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+	35% { opacity: 1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    35% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    35% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.input:before, .input.on:before, p.option:before, p.option.this:before {
+display: block;
+content: "";
+opacity: 1;
+height: 6px;
+width: 6px;
+left:0; right:0;
+margin: 0 auto;
+position: absolute;
+border-radius: 50%;
+background-color: #92bfce;
+top: -0.6em;
+transition: all .35s;
+-webkit-transition: all .35s;
+}
+.input:before, p.option:before {
+top: .4em;
+}
+p.option:before {
+opacity: 0;
+}
+
+.input:hover, p.option:hover {
+color: #92bfce;
+}
+p.tag {
+display: inline-block;
+padding: .8em 1em;
+margin: 0 1em 1em 0;
+border-radius: .4em;
+box-shadow: 0 1px 8px rgba(0,0,0,.2);
+font: 700 .8em 'Lato', sans-serif;
+color: #78828C;
+background-color: #fff;
+}
+.divider, .selection {
+margin: 4em 0 1em 0;
+}
+.selection > figure {
+display: none;
+}
+.selection > figure.selected {
+display: block;
+}
+.left, .right {
+display: inline-block;
+width: 48%;
+float: left;
+margin-bottom: 1%;
+}
+.left {
+margin-right: 1%;
+}
+.right {
+margin-left: 1%;
+}
+/* Remove bottom margin when the elements are having double margins by sitting inside other elements with margins */
+.large > .clmn3, .clmn3 > p, div.left > p, div.right > p {
+margin-bottom:0;
+}
+.right.gallery, .left.gallery {
+margin-left:2%;
+width: 47%;
+margin-top: 20px;
+transition: all .35s;
+-webkit-transition: all .35s;
+}
+.left.gallery {
+margin-right:0;
+}
+.right.gallery > a:nth-child(1) > figure {
+margin-top: 20%;
+}
+
+footer, div {
+display: block;
+width: 800px;
+margin: 0 auto 2em auto;
+position: relative;
+overflow: hidden;
+}
+.center {
+text-align: center;
+margin-bottom:0;
+}
+footer {
+overflow: auto;
+margin-top: 2em;
+}
+footer:before {
+display: block;
+content: "";
+height: 1px;
+background: #000;
+margin: 1em 0;
+}
+div.full {
+width: 100%;
+max-width: 1440px;
+float: left;
+}
+.large {
+width: 1024px;
+}
+figure.large {
+margin: auto;
+}
+div.intro {
+height: 80%;
+min-height: 640px;
+overflow: hidden;
+}
+div.intro > div {
+margin-top: 4em;
+}
+div.clmn3 {
+width: 28%;
+padding:2%;
+margin-right: 1%;
+float: left;
+}
+
+div.scl {
+display: inline-block;
+position: relative;
+width: 60px;
+height: 60px;
+margin: 20px;
+}
+.bg {
+background-color: #f7f7f7;
+}
+video, img {
+width: 100%;
+}
+a {
+color: #4C4F58;
+text-decoration: none;
+z-index: 5;
+position: relative;
+}
+p > a {
+box-shadow: inset 0 -1px 0 #92bfce;
+transition: all .1s;
+-webkit-transition: all .1s;
+}
+p > a:hover {
+color: #92bfce;
+}
+#sclblk {
+margin-bottom: 1em;
+top:0;
+}
+
+/* Extra Stylings */
+.accent {
+background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+background-position: bottom;
+background-size: 3px 1px;
+background-repeat: repeat-x;
+color: #2b3549;
+}
+/* ::-moz-selection */
+::selection {
+background-color: rgba(203, 248, 255, 0.4);
+color: #2b3549;
+}
+.menu, .about {
+left:-30%;
+width:30%;
+height:100%;
+background-color: rgba(255,255,255,.94);
+background-size: cover;
+z-index: 5;
+position: fixed;
+display: none;
+border-right: 1px solid rgba(0,0,0,.1);
+}
+.about {
+background-color: slategray;
+}
+.about > div {
+width:80%;
+margin-right: 10%;
+}
+.about > div > p {
+color: white;
+margin-top: 144px;
+}
+.menu > ul {
+display: inline-block;
+position: relative;
+top: 80px;
+height: 100%;
+margin: 0 auto;
+z-index: 5;
+}
+.menu > ul > li {
+margin: 2.4em auto;
+}
+.list {
+display: inline-block;
+font-size: 1em;
+line-height: 1.4em;
+transition: color .4s;
+-webkit-transition: color .4s;
+}
+.list {
+text-decoration: none;
+}
+.list:before {
+display: inline-block;
+color: #92bfce;
+content: "\2022";
+font-size: .6em;
+position: absolute;
+left:0;
+top: 3px;
+-webkit-transition: all 0.35s, -webkit-transform 0.35s;
+transition: all 0.35s, transform 0.35s;
+}
+li.focus > .list {
+color: #92bfce;
+}
+.list:hover:before, li.focus > .list:before {
+opacity: 1;
+left:-20px;
+top: 3px;
+}
+.list:hover {
+cursor: pointer;
+color: #92bfce;
+-webkit-transition: all 0.35s, -webkit-transform 0.35s;
+transition: all 0.35s, transform 0.35s;
+}
+li.here > a:after {
+content: "";
+position: absolute;
+top: 50%;
+left: 0;
+right: 0;
+height: 1px; 
+background: #2E2F31;
+/* line-through styling with more customization */
+}
+/* Trying to have hover state for the gallery */
+a > figure {
+width: 100%;
+height: 100%;
+margin: 0 0 4% 0;
+overflow: hidden;
+background-repeat:no-repeat;
+background-position: -100px 0;
+display: table;
+-webkit-transition: opacity 1 ease-in-out;
+transition: opacity 1 ease-in-out;
+-moz-transition: opacity 1 ease-in-out;
+box-shadow: 4px 4px 32px rgba(0,0,0,.1);
+}
+figcaption.title, figcaption.main {
+position: absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+width: 80%;
+display: table;
+color: #fff;
+}
+a > figure img {
+width:100%;
+height:100%;
+margin:auto;
+opacity:1;
+-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+transition:opacity 0.3s, transform 0.3s;
+-webkit-transform:scale(1.03);
+transform:scale(1.03);
+}
+a > figure:hover img {
+opacity:0.1;
+-webkit-transform:scale(1.08);
+transform:scale(1.08);
+}
+figcaption.title {
+font-size: .7em;
+margin-top:50px;
+-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+transition:opacity 0.3s, transform 0.3s;
+-webkit-transform:translate3d(0,20px,0);
+transform:translate3d(0,20px,0);
+}
+figcaption.main {
+font-size: 1em;
+margin-top: 80px;
+-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+transition:opacity 0.3s, transform 0.3s;
+-webkit-transform:translate3d(0,20px,0);
+transform:translate3d(0,20px,0);
+}
+a > figure:hover figcaption.title {
+opacity:1;
+-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+transition:opacity 0.3s, transform 0.3s;	
+-webkit-transform:translate3d(0,0,0);
+transform:translate3d(0,0,0);
+}
+a > figure:hover figcaption.main {
+opacity:1;
+-webkit-transform:translate3d(0,0,0);
+transform:translate3d(0,0,0);
+}
+.fadein {
+position: relative;
+}
+.load {
+margin: 0 2%;
+opacity: 1;
+transition: all .35s;
+-webkit-transition: all .35s;
+}
+.fff {
+color: #fff!important;
+}
+.third {
+width: 20%;
+margin: 0 40%;
+}
+.half {
+width: 60%;
+margin: 20%;
+}
+@media screen and (max-width: 1024px) and (min-width: 861px) {
+.large {
+width: 100%;
+}
+.about, .menu {
+width: 50%;
+}
+figcaption.main {
+font-size: .8em;
+}
+}
+@media screen and (max-width: 860px) {
+figcaption {
+max-width: 90%;
+}
+figcaption.main {
+font-size: .8em;
+}
+.logo, .menuon  {
+margin: 0 5%!important;
+transition: all .35s;
+-webkit-transition: all .35s;
+}
+.right.gallery > a:nth-child(1) > figure {
+margin-top: 0;
+}
+body {
+overflow-x: hidden;
+}
+div.sclcircle {
+margin: 0;
+}
+div, .large {
+width: 90%;
+margin-left: 5%;
+margin-right: 5%;
+}
+.left.gallery, .right.gallery {
+width: 100%;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 0;
+}
+figure > figcaption, div > figcaption, div.full, div.left, div.right {
+width: 100%;
+margin: 0 0 1em 0;
+}
+.about > div, div.intro, footer {
+width: 90%;
+padding: 5%;
+}
+.about, .menu, div > div {
+width: 100%;
+margin: 0;
+}
+p.philmo {
+font-size:1.2em;
+}
+p.sub {
+font-size:.8em;
+}
+.header {
+padding: 20px 0;
+}
+.load {
+margin: 0 5%;
+opacity: 1;
+}
+div.intro > div {
+margin-top: 2em;
+}
+div.scl {
+margin: 0;
+}
+p.sclblrb {
+display: none;
+}
+}
+@media screen and (max-width: 767px) {
+div.clmn3 {
+width: 100%;
+}
+.large > .clmn3 {
+width: 100%;
+padding: 4% 0 8% 0;
+}
+}
