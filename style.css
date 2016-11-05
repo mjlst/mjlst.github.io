@@ -652,6 +652,10 @@ margin: 0 40%;
 width: 60%;
 margin: 20%;
 }
+.first {
+width: 80%;
+margin: 10%;
+}
 @media screen and (max-width: 1024px) and (min-width: 861px) {
 .large {
 width: 100%;
