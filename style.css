@@ -60,7 +60,7 @@ display: block;
 margin: .5em auto;
 }
 /* Apply Single Styling to multiple elements */
-.list, figcaption, p.sclblrb, p.support, .months, .input, h4/* for data vis */, h5, p.philmo, h1, p.sub, h2, h3, .font1, .font2 {
+.list, figcaption, p.sclblrb, .support, .months, .input, h4/* for data vis */, h5, p.philmo, h1, p.sub, h2, h3, .font1, .font2 {
 font-family: 'Lato', sans-serif;
 }
 div.scl, #sclblk, .selection, .selection > div, .right.gallery, .left.gallery {
@@ -83,6 +83,7 @@ display: inline-block;
 position: relative;
 margin: 0;
 text-transform: uppercase;
+cursor: pointer;
 }
 .menu > img {
 position: absolute;
@@ -180,7 +181,7 @@ p.sub {
 line-height: 1.6em;
 margin-bottom:0;
 }
-figcaption, p.sclblrb, p.support, .months, .input, h4/* for data vis */ {
+figcaption, p.sclblrb, .support, .months, .input, h4/* for data vis */ {
 font-size: .8em;
 line-height: 1.6em;
 color: #2E2F31;
@@ -223,6 +224,9 @@ color: #92bfce;
 div#end {
 margin-top:4em;
 }
+.clmn3 > figure {
+margin-bottom:8%;
+}
 p {
 font-family: 'PT Serif', sans-serif;
 font-size: 1em;
@@ -230,7 +234,7 @@ line-height: 1.8em;
 color: #2E2F31;
 margin-bottom: 2em;
 }
-p.support {
+.support {
 color: #4C4F58;
 }
 div > div.clmn3 > h3 {
@@ -452,6 +456,9 @@ margin: 20px;
 .bg {
 background-color: #f7f7f7;
 }
+.full.bg {
+padding-top: 4%;
+}
 video, img {
 width: 100%;
 }
@@ -653,8 +660,8 @@ width: 60%;
 margin: 20%;
 }
 .first {
-width: 80%;
-margin: 10%;
+width: 90%;
+margin: 5%;
 }
 @media screen and (max-width: 1024px) and (min-width: 861px) {
 .large {
@@ -678,6 +685,9 @@ font-size: .8em;
 margin: 0 5%!important;
 transition: all .35s;
 -webkit-transition: all .35s;
+}
+.gallery > a {
+cursor:pointer;
 }
 .right.gallery > a:nth-child(1) > figure {
 margin-top: 0;
