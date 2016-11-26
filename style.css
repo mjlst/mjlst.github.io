@@ -713,7 +713,7 @@ figure > figcaption, div > figcaption, div.full, div.left, div.right {
 width: 100%;
 margin: 0 0 1em 0;
 }
-.about > div, div.intro, footer {
+.full > div, .about > div, div.intro, footer {
 width: 90%;
 padding: 5%;
 }
@@ -736,6 +736,7 @@ opacity: 1;
 }
 div.intro > div {
 margin-top: 2em;
+padding-top: .5em;
 }
 div.scl {
 margin: 0;
@@ -746,10 +747,20 @@ display: none;
 }
 @media screen and (max-width: 767px) {
 div.clmn3 {
-width: 100%;
+width: 90%;
+padding: 0 5%;
 }
 .large > .clmn3 {
 width: 100%;
 padding: 4% 0 8% 0;
+}
+figcaption.title, figcaption.main {
+left:20px;
+}
+.menu > img {
+display: none;
+}
+body {
+font-size: 18px;
 }
 }
