@@ -117,7 +117,7 @@ $('.menu > ul > li > a').hover(function(i) {
 		'opacity':1
 	}, 100);
 });
-$('a').not('a[target="_blank"]').click( function(ev){
+$('a').not('a[target="_blank"], .fld').click( function(ev){
 	// Stop anchor
 	ev.preventDefault();
 	// Store a reference to the anchor tag

@@ -10,6 +10,7 @@
 <!-- Master stylesheet -->
 <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="./slick.css">
+<link rel="stylesheet" href="./fluidbox.min.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 <style type="text/css">
@@ -58,7 +59,7 @@ width:100%;
 		<li><a class="list" href="http://sigfig.com" target="_blank">SigFig</a></li>
 		<li class="focus here"><a class="list" href="./bookclip.html">Bookclip</a></li>
 		<li><a class="list" href="./rigit.html">Rig-it</a></li>
-		<li><a class="list" href="./inf.html">ID Monitoring Product Revamp</a></li>
+		<li><a class="list" href="./inf.html">ID Monitoring Product</a></li>
 		<li><a class="list" href="./tempvis.html">Data Visualization</a></li>
 		<li><a class="list" href="./rivermatters.html">Rivermatters</a></li>
 <!-- 		<li><p class="list abouton">about</p></li> -->
@@ -66,6 +67,7 @@ width:100%;
 	<img src="./sigfig.svg">
 	<img class="here" src="./bk_int.png">
 	<img src="./rigit/rigit.png">
+	<img src="./inf_.png">
 	<img src="./tempvis.png">
 	<img src="./rm_.png">
 <!-- 	<img src="./minj_prfl.png"> -->
@@ -167,10 +169,11 @@ width:100%;
 	<p>To help business owners get prepared for data-breaches, the team decided to build Administrator’s portal, which allows them to purchase a number of services to their employees and customers.</p>
 </div>
 <div class="full">
+		<a class="fld" href="./inf/dashboard/ap3.png">
+			<img src="./inf/dashboard/ap3.png" alt="" />
+		</a>
+
 	<div class="clmn3">
-		<figure>
-			<img src="./inf/dashboard/ap3.png">
-		</figure>
 		<figure>
 			<img src="./inf/dashboard/ap4.png">
 		</figure>
@@ -249,8 +252,12 @@ width:100%;
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 <script src="./functions.js"></script>
 <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./jquery.fluidbox.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 $(document).on('ready', function() {
+$(function () {
+    $('a.fld').fluidbox();
+})
 	$('.slick').slick({
 		arrows: true,
 		dots: true,
