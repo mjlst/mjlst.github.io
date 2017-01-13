@@ -107,6 +107,7 @@ background-position: center bottom;
 	<div class="center selection">
 		<p class="option" name="pitButton" type="button" value="pittsburgh" onclick="updatePitData()" />Pittsburgh</p>
 		<p class="option this" name="sanButton" type="button" value="San Francisco" onclick="updateSanData()" />San Francisco</p>
+		<p class="option" name="seoulButton" type="button" value="Seoul" onclick="updateSeoulData()" />Seoul</p>
 	</div>
 </div>
 
@@ -283,7 +284,7 @@ d3.csv('./datavis/2014_san_temp.csv', function(error, data) {
 
 //Update the data to Pittsburgh
 function updatePitData() {
-	$('div[name="pitButton"], div[name="sanButton"]').removeClass('on');
+	$('div[name="pitButton"], div[name="sanButton"], div[name="seoulButton"]').removeClass('on');
 	$('div[name="pitButton"]').addClass('on');
 	d3.csv('./datavis/2014_pit_temp.csv', function(error, dataset) {
 		dataset.forEach(function(d) {
@@ -306,7 +307,7 @@ function updatePitData() {
 };
 
 function updateSanData() {
-	$('div[name="pitButton"], div[name="sanButton"]').removeClass('on');
+	$('div[name="pitButton"], div[name="sanButton"], div[name="seoulButton"]').removeClass('on');
 	$('div[name="sanButton"]').addClass('on');
 		d3.csv('./datavis/2014_san_temp.csv', function(error, dataset) {
 		dataset.forEach(function(d) {
@@ -327,6 +328,30 @@ function updateSanData() {
 	d3.selectAll('div.tip').data(dataset).html(function(d) {return d.Date +'<span class="temp"><br>Max:  ' + d.Max + '&#8457;<br>Min: ' + d.Min + '&#8457;</span>';});
 });
 };
+
+function updateSeoulData() {
+	$('div[name="pitButton"], div[name="sanButton"], div[name="seoulButton"]').removeClass('on');
+	$('div[name="seoulButton"]').addClass('on');
+		d3.csv('./datavis/2014_seoul_temp.csv', function(error, dataset) {
+		dataset.forEach(function(d) {
+			d.Date = parseTime(d.Date);
+			d.Max = +d.Max;
+			d.Min = +d.Min;		
+			});		
+		console.log(dataset[0].Max);
+
+	d3.selectAll('rect.maxtemp').data(dataset).transition()
+		.attr('width', function(d) {return xRange(d.Max) + 'px';})
+		.attr('fill', function(d) {return color(d.Max);});
+
+	d3.selectAll('rect.mintemp').data(dataset).transition()
+		.attr('width', function(d) {return xRange(d.Min) + 'px';})
+		.attr('fill', function(d) {return color(d.Min);});
+
+	d3.selectAll('div.tip').data(dataset).html(function(d) {return d.Date +'<span class="temp"><br>Max:  ' + d.Max + '&#8457;<br>Min: ' + d.Min + '&#8457;</span>';});
+});
+};
+
 $(document).ready(function () {
 	// ** Scroll Top, Process Button, Hide this **
 	$('.scrolltotop').click(function() {

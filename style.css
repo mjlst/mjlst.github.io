@@ -73,7 +73,7 @@ opacity: 0;
 h1.logo {
 display: inline-block;
 font: 700 .8em 'Lato', sans-serif;
-letter-spacing: 1;
+letter-spacing: .8;
 text-transform: uppercase;
 color: #000;
 z-index: 5;
@@ -192,7 +192,7 @@ margin-bottom: .8em;
 font-size: 1em;
 font-weight: 700;
 text-transform: uppercase;
-letter-spacing: .2em;
+letter-spacing: .14em;
 }
 .intro > .sub {
 color: #78828c;
@@ -225,6 +225,28 @@ margin-top:4em;
 }
 .clmn3 > figure {
 margin-bottom:8%;
+}
+a.col-3 {
+width: 32%;
+}
+.gal {
+display: flex;
+flex-flow: row wrap;
+-webkit-box-pack: justify;
+justify-content: space-between;
+width: 100%;
+max-width: 1440px;
+float: left;
+overflow:visible;
+}
+.fluidbox__overlay {
+overflow: visible;
+width:100%;
+}
+.col-3 > .fluidbox__wrap {
+overflow:visible;
+width: 100%;
+cursor:zoom-in;
 }
 p {
 font-family: 'PT Serif', sans-serif;
@@ -292,6 +314,7 @@ border-radius: .2em;
 box-shadow: 0 1px 8px rgba(0,0,0,.2);
 background-color: #FF5757;
 font: 700 .8em 'Lato', sans-serif;
+line-height: 1.6;
 letter-spacing: .1em;
 text-transform: uppercase;
 color:#fff;
@@ -464,7 +487,7 @@ width: 100%;
 a {
 color: #4C4F58;
 text-decoration: none;
-z-index: 5;
+/* z-index: 5; */
 position: relative;
 }
 p > a {
@@ -711,6 +734,9 @@ margin-bottom: 0;
 figure > figcaption, div > figcaption, div.full, div.left, div.right {
 width: 100%;
 margin: 0 0 1em 0;
+}
+.full > figure > figcaption {
+margin-left: 5%;
 }
 .full > div, .about > div, div.intro, footer {
 width: 90%;
