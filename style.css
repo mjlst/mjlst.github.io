@@ -418,7 +418,7 @@ margin: 1em 0;
 }
 div.full {
 width: 100%;
-max-width: 1440px;
+/* max-width: 1440px; */
 float: left;
 }
 .large {
