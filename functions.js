@@ -117,7 +117,7 @@ $('.menu > ul > li > a').hover(function(i) {
 		'opacity':1
 	}, 100);
 });
-$('a').not('a[target="_blank"]').click( function(ev){
+$('a').not('a[target="_blank"], .fld').click( function(ev){
 	// Stop anchor
 	ev.preventDefault();
 	// Store a reference to the anchor tag
@@ -158,7 +158,7 @@ $('.scl > a').hover(function(i) {
 	$(this).find('circle').animate({'r':26}, 100);
 });
 // setting up colors for the social links (This part is only related to index.html
-var clr = ['#002841', '#AD847C', '#78828C', '#FF7C5A', '#cd5c5c', '#fa8072', 'indianred']
+var clr = ['#002841', '#AD847C', '#78828C', '#FF7C5A', '#93959A', '#fa8072', '#696969']
 $('a > figure').each(function(i) {
 	$(this).css({
 		'background-color': clr[i]

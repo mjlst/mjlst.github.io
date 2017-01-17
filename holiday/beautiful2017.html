@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<!-- Happy Holiday, Everyone! -->
+<head>
+<!--[if IE]><script type="text/javascript">window.location = "holidayie.html";</script><![endif]-->
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<title>Happy Holiday, Everyone!</title>
+<!-- Meta Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='reset.css' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+<!-- add google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49851605-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Master stylesheet -->
+<style>
+* { padding: 0; margin: 0; }
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+svg { position:fixed; top:0; bottom:0; left:0; right:0; z-index:-2;}
+div.left {
+width: 50%;
+height:100%;
+left: 0;
+top:0;
+bottom:0;
+background-color: salmon;
+opacity: .8;
+}
+</style>
+</head>
+<body>
+<div class="left">
+<p>Wow what a class.</p>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+$(document).ready(function() {
+	var rnNum = Math.round(Math.random()*10+10);
+ 	var makeSVG = d3.select('body').append('svg').attr('width', '100%').attr('height', '100%');
+	for (i = 0; i < rnNum; i++) {
+		var rnCol = function() {
+		colors = ['indianred', 'slategrey', 'blue', 'purple', 'green', 'pink', 'orange', 'yellow', 'tomato', 'slateblue', 'salmon', 'royalblue']
+		return colors[Math.floor(Math.random()*colors.length)];
+		}
+		var rnSize = Math.round(Math.random()*24);
+		var rnRelX = Math.round(Math.random()*100);
+		var rnRelY = Math.round(Math.random()*100);
+		var makeCir = makeSVG.append('circle').attr('cx', rnRelX + '%').attr('cy', rnRelY + '%').attr('r', rnSize).style('fill', rnCol);
+		function transition() {
+			makeCir.transition()
+				.duration(1000)
+				.attr('cx',  rnRelX + (1 + Math.random()/2) +'%')
+				.attr('cy',  rnRelY + (1 + Math.random()/2) +'%');
+// 				.each('end', transition);
+		};
+		transition();
+	}
+});
+</script>
+</html>

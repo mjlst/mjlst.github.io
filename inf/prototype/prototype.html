@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+<script src="dist/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="docs/assets/js/vendor/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Added Javascript/Jquery -->
+<style>
+body {
+font-weight: 300;
+}
+#flgrchivd {
+}
+.alert {
+display: none;
+position:fixed;
+width:100%;
+z-index:5;
+text-align: center;
+top:0;
+left:0;
+}
+#clr {
+display: none;
+}
+a {
+cursor: pointer;
+}
+.ids-box {
+border: 1px solid #eee;
+padding: 10px 20px;
+margin: 20px auto;
+}
+.add {
+display: none;
+}
+.hgh {
+}
+.mdm {
+color: #aaa;
+}
+.lw {
+color: #ddd;
+}
+.lst {
+cursor: pointer;
+border-left: 8px solid #f9f9f9;
+}
+.lst:hover {
+border-left: 8px solid #999;
+}
+.off {
+color: #ddd;
+}
+.on {
+color: #000;
+}
+#stts {
+width: 100%;
+background-color:#eee;
+margin: 20px 0;
+}
+</style>
+<title>Dashboard Template for Bootstrap</title>
+<!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.css" rel="stylesheet">
+<link href="dist/css/font-awesome.css" rel="stylesheet">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="docs/assets/js/ie-emulation-modes-warning.js"></script>
+</head>
+
+<body>
+<div class="alert alert-info" role="alert"><strong>Alert archived</strong> Your alert successfully archived&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Undo</a></div>
+<nav class="navbar navbar-default" style="margin-bottom:0;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-top">
+            <a class="navbar-brand" href="#">IdentitySmart</a>
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown">
+                <div class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <a class="navbar-brand" href="#">Johnathan Doe</a>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="margin-top:40px;">
+                    <li><a href="">My membership</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-default">
+    <ul class="nav navbar-nav navbar">
+        <li><a href="">Overview</a></li>
+        <li><a href="">Credit Monitoring</a></li>
+        <li><a href="">Restoration Center</a></li>
+        <li><a href="">Resources</a></li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="col-md-10 col-md-offset-1">
+        <h1 class="text-center">Good morning, Johnathan.</h1>
+        <h4 class="text-center">You have <strong>3 new alerts</strong>, since your last visit on 3/8/2016.</h4>
+        <h4 class="text-center">Please add your mobile number to receive.</h4>
+        <div id="stts"><img src="dv.png" style="width:100%;"></div>
+    </div>
+    <div class="col-md-3 col-md-offset-1">
+        <div class="ids-box">
+            <h3>Credit Score</h3>
+            <p>Know what the biggest factors are that impact your score.<br><a href="">See Credit Score Factors</a></p>
+            <p class="text-center" style="font-size:48px;">687 <span style="font-size:30px;">Fair</span></h2>
+            <p class="text-center">Experian<br>FICO Score</p>
+            <p><strong>Last update 3 days ago</strong> 03/05/2015<br><strong>Next update in 4 days </strong>03/12/2015</p>
+        </div>
+        <div class="ids-box">
+            <h3>Suspect Identity Theft?</h3>
+            <p><a href="">Go to Restoration Center</a><br><a href="">See My $ 1 Million Insurance Policy</a></p>
+            <p>Call a restoration specialists at:<br><span style="font-size:30px;">1-855-417-2321</span></p>
+        </div>
+        <div class="ids-box">
+            <h3>Public Records</h3>
+            <p>Access your complimentary public records report.</p>
+            <p><a>Access My Report</a></p>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="ids-box">
+            <h3>Alerts</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#sectionA">Important Alerts (14)</a></li>
+                <li><a data-toggle="tab" href="#sectionB">Breach News (16)</a></li>
+                <li><a data-toggle="tab" href="#sectionC" id="archvdalrts">Archived alerts</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="sectionA" class="table-responsive tab-pane fade in active" aria-multiselectable="true">
+                    <p style="margin-top:20px; display:inline-block;">Filter all the alerts by&nbsp;&nbsp;
+                            <button class="btn btn-default dropdown-toggle" type="button" id="risk" data-toggle="dropdown"><strong>Risk</strong></button>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="reset" data-toggle="dropdown"><strong>Remove Filter</strong></button>
+                    </p>
+                    <table id="alrts" class="table table-striped">
+                        <thead>
+                            <tr>
+                            <th style="width:10%;">Risk</th>
+                            <th style="width:10%;">Category</th>
+                            <th style="width:40%;">Description/Title</th>
+                            <th style="width:20%;">Date</th>
+                            <th style="width:10%;">archive</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo1" class="accordion-toggle" aria-controls="demo1"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo1" class="accordion-toggle" aria-controls="demo1">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo1" class="accordion-toggle" aria-controls="demo1">Adobe Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo1" class="accordion-toggle" aria-controls="demo1">Oct 30th</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo1">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/30/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo2" class="accordion-toggle" aria-controls="demo2"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo2" class="accordion-toggle" aria-controls="demo2">Credit</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo2" class="accordion-toggle" aria-controls="demo2">New credit card application detected</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo2" class="accordion-toggle" aria-controls="demo2">Sep 22nd</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo2">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo3" class="accordion-toggle" aria-controls="demo3"><i class="fa fa-exclamation-triangle mdm"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo3" class="accordion-toggle" aria-controls="demo3">SSN</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo3" class="accordion-toggle" aria-controls="demo3">New bank account opened</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo3" class="accordion-toggle" aria-controls="demo3">Aug 21st</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo3">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/21/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo4" class="accordion-toggle" aria-controls="#demo4"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo4" class="accordion-toggle" aria-controls="#demo4">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo4" class="accordion-toggle" aria-controls="#demo4">Target Insurance company</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo4" class="accordion-toggle" aria-controls="#demo4">June 20th</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo4">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo6" class="accordion-toggle" aria-controls="demo6"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo6" class="accordion-toggle" aria-controls="demo6">SSN</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo6" class="accordion-toggle" aria-controls="demo6">SSN Breach Found: New drivers License applied.</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo6" class="accordion-toggle" aria-controls="demo6">May 11th</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo6">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/11/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo61" class="accordion-toggle" aria-controls="demo61"><i class="fa fa-exclamation-triangle mdm"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo61" class="accordion-toggle" aria-controls="demo61">SSN</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo61" class="accordion-toggle" aria-controls="demo61">New Credit Card Account</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo61" class="accordion-toggle" aria-controls="demo61">Apr 11th</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo61">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/11/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo62" class="accordion-toggle" aria-controls="demo62"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo62" class="accordion-toggle" aria-controls="demo62">SSN</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo62" class="accordion-toggle" aria-controls="demo62">New credit card account created</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo62" class="accordion-toggle" aria-controls="demo62">Mar 29th</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo62">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/11/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo63" class="accordion-toggle" aria-controls="demo63"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo63" class="accordion-toggle" aria-controls="demo63">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo63" class="accordion-toggle" aria-controls="demo63">Target insurance breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo63" class="accordion-toggle" aria-controls="demo63">Mar 11th</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo63">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/11/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo64" class="accordion-toggle" aria-controls="demo64"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo64" class="accordion-toggle" aria-controls="demo64">Credit</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo64" class="accordion-toggle" aria-controls="demo64">Your credit score dropped significantly</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo64" class="accordion-toggle" aria-controls="demo64">Mar 3rd</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo64">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/11/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo65" class="accordion-toggle" aria-controls="demo65"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo65" class="accordion-toggle" aria-controls="demo65">credit</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo65" class="accordion-toggle" aria-controls="demo65">New credit card application declined.</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo65" class="accordion-toggle" aria-controls="demo65">Mar 1st</td>
+                                <td><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo65">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/11/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo76" class="accordion-toggle" aria-controls="#demo76"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo76" class="accordion-toggle" aria-controls="#demo76">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo76" class="accordion-toggle" aria-controls="#demo76">T-mobile breach found</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo76" class="accordion-toggle" aria-controls="#demo76">Feb 10th</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo76">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo71" class="accordion-toggle" aria-controls="#demo71"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo71" class="accordion-toggle" aria-controls="#demo71">Credit</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo71" class="accordion-toggle" aria-controls="#demo71">Credit card fraud detected</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo71" class="accordion-toggle" aria-controls="#demo71">Feb 2nd</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo71">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo72" class="accordion-toggle" aria-controls="#demo72"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo72" class="accordion-toggle" aria-controls="#demo72">Credit</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo72" class="accordion-toggle" aria-controls="#demo72">Bank of America credit card application found.</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo72" class="accordion-toggle" aria-controls="#demo72">Feb 1st</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo72">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo73" class="accordion-toggle" aria-controls="#demo73"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo73" class="accordion-toggle" aria-controls="#demo73">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo73" class="accordion-toggle" aria-controls="#demo73">Identity theft detection</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo73" class="accordion-toggle" aria-controls="#demo73">Jan 22nd</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo73">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo74" class="accordion-toggle" aria-controls="#demo74"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo74" class="accordion-toggle" aria-controls="#demo74">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo74" class="accordion-toggle" aria-controls="#demo74">Comcast Xfinity email and password hacked.</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo74" class="accordion-toggle" aria-controls="#demo74">Jan 10th</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo74">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo75" class="accordion-toggle" aria-controls="#demo75"><i class="fa fa-exclamation-triangle mdm"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo75" class="accordion-toggle" aria-controls="#demo75">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo75" class="accordion-toggle" aria-controls="#demo75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo75" class="accordion-toggle" aria-controls="#demo75">Jan 1st</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo75">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo8" class="accordion-toggle" aria-controls="#demo8"><i class="fa fa-exclamation-triangle lw"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo8" class="accordion-toggle" aria-controls="#demo8">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo8" class="accordion-toggle" aria-controls="#demo8">Target Insurance company</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo8" class="accordion-toggle" aria-controls="#demo8">Dec 4th</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo8">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo9" class="accordion-toggle" aria-controls="#demo9"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo9" class="accordion-toggle" aria-controls="#demo9">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo9" class="accordion-toggle" aria-controls="#demo9">000Webhost Breach: 13 million emails, names, addr...</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo9" class="accordion-toggle" aria-controls="#demo9">Sep 6th</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo9">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst add">
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo10" class="accordion-toggle" aria-controls="#demo10"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo10" class="accordion-toggle" aria-controls="#demo10">SSN</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo10" class="accordion-toggle" aria-controls="#demo10">SSN Breach Found : New drivers license applied.</td>
+                                <td data-toggle="collapse" data-parent="#sectionA" data-target="#demo10" class="accordion-toggle" aria-controls="#demo10">Sep 2nd</td>
+                                <td style="width:10%;"><a class="btnbtn"/>archive</a></td>
+                            </tr>
+                            <tr class="detail add">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demo10">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <button type="submit" class="btn btn-primary me">This was me</button>
+                                            <button type="submit" class="btn btn-primary notme">This was NOT me</button>
+                                            <h4>(status)</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="clr" style="padding:0;">
+                                <td></td>
+                                <td></td>
+                                <td><p class="text=center">you're all clear with new alerts! <br>We'll keep an eye on you.</p></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button id="add1" type="button" class="btn btn-default btn-lg btn-block">Load 9 more alerts</button>
+
+                    <table id="flgrchivd" class="table table-striped flg">
+                        <tbody>
+                            <thead>
+                                <tr>
+                                    <th style="width:10%;"></th>
+                                    <th style="width:10%;"></th>
+                                    <th style="width:40%;"></th>
+                                    <th style="width:20%;"></th>
+                                    <th style="width:10%;"></th>
+                                    <th style="width:10%;"></th>
+                                </tr>
+                            </thead>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="sectionB" class="table-responsive tab-pane fade" aria-multiselectable="true">
+                    <div style="margin:20px auto;"><p class="text-center">There are 16 breach news from 10/03/2014 to 01/07/2016</p></div>
+                    <table id="alrts" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th style="width:10%;">Involved</th>
+                                <th style="width:10%;">Category</th>
+                                <th style="width:40%;">Description/Title</th>
+                                <th style="width:20%;">Date</th>
+                                <th style="width:10%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob1" class="accordion-toggle" aria-controls="demob1"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob1" class="accordion-toggle" aria-controls="demob1">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob1" class="accordion-toggle" aria-controls="demob1">JP Morgan Data Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob1" class="accordion-toggle" aria-controls="demob1">Sep 30th</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob1">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/30/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob13" class="accordion-toggle" aria-controls="demob13"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob13" class="accordion-toggle" aria-controls="demob13">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob13" class="accordion-toggle" aria-controls="demob13">Home Depot Email Address Hacked</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob13" class="accordion-toggle" aria-controls="demob13">Oct 22nd</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob13">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob3" class="accordion-toggle" aria-controls="demob3"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob3" class="accordion-toggle" aria-controls="demob3">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob3" class="accordion-toggle" aria-controls="demob3">Starwood Hotel Breach Email Address Hacked</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob3" class="accordion-toggle" aria-controls="demob3">Oct 14th</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob3">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob4" class="accordion-toggle" aria-controls="demob4"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob4" class="accordion-toggle" aria-controls="demob4">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob4" class="accordion-toggle" aria-controls="demob4">Starwood Hotel Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob4" class="accordion-toggle" aria-controls="demob4">Oct 3rd</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob4">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob5" class="accordion-toggle" aria-controls="demob5"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob5" class="accordion-toggle" aria-controls="demob5">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob5" class="accordion-toggle" aria-controls="demob5">000Webhost Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob5" class="accordion-toggle" aria-controls="demob5">Sep 22nd</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob5">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob6" class="accordion-toggle" aria-controls="demob6"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob6" class="accordion-toggle" aria-controls="demob6">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob6" class="accordion-toggle" aria-controls="demob6">Payment Card Breach at America's Thrift Stores</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob6" class="accordion-toggle" aria-controls="demob6">Aug 11th</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob6">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob7" class="accordion-toggle" aria-controls="demob7"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob7" class="accordion-toggle" aria-controls="demob7">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob7" class="accordion-toggle" aria-controls="demob7">Excellus BlueCross BlueShield Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob7" class="accordion-toggle" aria-controls="demob7">Aug 8th</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob7">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob8" class="accordion-toggle" aria-controls="demob8"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob8" class="accordion-toggle" aria-controls="demob8">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob8" class="accordion-toggle" aria-controls="demob8">Ashley Madison Hack</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob8" class="accordion-toggle" aria-controls="demob8">July 3rd</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob8">
+                                    <div class="row" style="width:80%;margin:0 auto;">
+                                        <div class="col-sm-3">Time</div>
+                                        <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                    </div>
+                                    <div class="row" style="width:80%;margin:0 auto;">
+                                        <div class="col-sm-3">Email</div>
+                                        <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                    </div>
+                                    <div class="row" style="width:80%;margin:0 auto;">
+                                        <div class="col-sm-3">Leak type</div>
+                                        <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                    </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob9" class="accordion-toggle" aria-controls="demob9"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob9" class="accordion-toggle" aria-controls="demob9">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob9" class="accordion-toggle" aria-controls="demob9">LastPass Password Management Service Compromised</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob9" class="accordion-toggle" aria-controls="demob9">July 2nd</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob9">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob10" class="accordion-toggle" aria-controls="demob10"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob10" class="accordion-toggle" aria-controls="demob10">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob10" class="accordion-toggle" aria-controls="demob10">CareFirst Security Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob10" class="accordion-toggle" aria-controls="demob10">July 1st</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob10">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob11" class="accordion-toggle" aria-controls="demob11"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob11" class="accordion-toggle" aria-controls="demob11">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob11" class="accordion-toggle" aria-controls="demob11">Home Depot Email Addresses Hacked</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob11" class="accordion-toggle" aria-controls="demob11">June 29th</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob11">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob12" class="accordion-toggle" aria-controls="demob12"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob12" class="accordion-toggle" aria-controls="demob12">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob12" class="accordion-toggle" aria-controls="demob12">Experian Breach Exposes T-Mobile Credit Applications</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob12" class="accordion-toggle" aria-controls="demob12">June 11th</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob12">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/22/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob3" class="accordion-toggle" aria-controls="demob3"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob3" class="accordion-toggle" aria-controls="demob3">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob3" class="accordion-toggle" aria-controls="demob3">Anthem Medical Insurance Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob3" class="accordion-toggle" aria-controls="demob3">May 21st</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob3">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/21/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob4" class="accordion-toggle" aria-controls="#demob4"></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob4" class="accordion-toggle" aria-controls="#demob4">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob4" class="accordion-toggle" aria-controls="#demob4">CareFirst Security Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob4" class="accordion-toggle" aria-controls="#demob4">May 20th</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob4">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/20/2015 04:11PM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Related to</div>
+                                            <div class="col-sm-9">Social Security Number</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Description</div>
+                                            <div class="col-sm-9">High Risk Transaction: We have found an insurance application using your personal information.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="lst">
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob5" class="accordion-toggle" aria-controls="demob5"><i class="fa fa-exclamation-triangle hgh"></i></td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob5" class="accordion-toggle" aria-controls="demob5">Email</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob5" class="accordion-toggle" aria-controls="demob5">I.R.S "Get Transcript" Application Breach</td>
+                                <td data-toggle="collapse" data-parent="#sectionB" data-target="#demob5" class="accordion-toggle" aria-controls="demob5">Apr 11th</td>
+                                <td></td>
+                            </tr>
+                            <tr class="detail">
+                                <td colspan="6" class="hiddenRow" style="padding:0;">
+                                    <div class="accordion-body collapse" id="demob5">
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Time</div>
+                                            <div class="col-sm-9">09/11/2015 09:23AM</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Email</div>
+                                            <div class="col-sm-9">johnsmithnew@emil.com</div>
+                                        </div>
+                                        <div class="row" style="width:80%;margin:0 auto;">
+                                            <div class="col-sm-3">Leak type</div>
+                                            <div class="col-sm-9">Adobe Systems announced on October 3rd of 2013 that hackers broke into Adobe network and stole source code for a range of products, including ColdFusion and Acrobat family of products. The breach also affected what was at that time estimated to be 2.9 million users but later was revised to include at least 38 million users. Adobe said hackers had stolen nearly 3 million encrypted customer credit card records, as well as login data for an undetermined number of Adobe user accounts. The breach happened in early October but the stolen accounts were not published on the web until early November. The published data includes 10s of millions of accounts with IDs, email addresses, encrypted passwords and more.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="sectionC" class="table-responsive tab-pane fade" aria-multiselectable="true">
+                  <table id="rch" class="table table-striped rchivd">
+                      <tbody>
+                              <p id="norch" class="text-center">There are no archived alerts yet. <br>To archive alerts, click the 'archive' button on the right side of each alert.</p>
+                          <thead>
+                              <tr>
+                                  <th></th>
+                                  <th></th>
+                                  <th></th>
+                                  <th></th>
+                                  <th></th>
+                                  <th></th>
+                              </tr>
+                          </thead>
+                      </tbody>
+                  </table>
+                <div>
+            </div>
+        </div>
+        <div class="na">
+            <div class="col-md-6 ids-box">
+                <div style="height:200px;background-color:#eee;margin:6px;margin-bottom:15px;"></div>
+                <p><strong>Dallas-Based Restarant Chain Confirms POS Breach</strong> Data Breach</p>
+                <p>Tracy Johns | January 01, 2016</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus nunc vel lorem pellentesque egestas. Suspendisse sodales ultrices interdum. Integer lacus massa, feugiat at ipsum in, luctus ullamcorper ante. </p>
+                <a><p>Read More</p></a>
+            </div>
+            <div class="col-md-6 ids-box">
+                <div style="height:200px;background-color:#eee;margin:6px;margin-bottom:15px;"></div>
+                    <p><strong>Sextortion Scheme Former U.S. Official Pleads Guilty.</strong> Privacy</p>
+                    <p>Mathew J. Schwarts | December 25, 2015</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus nunc vel lorem pellentesque egestas. Suspendisse sodales ultrices interdum. Integer lacus massa, feugiat at ipsum in, luctus ullamcorper ante. </p>
+                    <a><p>Read More</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript">
+$(document).ready(function(e) {
+
+$('.btnbtn').click(function() {
+$(this).closest('tr').next('.detail').prependTo('.rchivd');
+$(this).closest('tr').prependTo('.rchivd');
+$(this).parent().html('archived');
+$('.alert').fadeIn('fast', function() {
+  $('.alert').delay(2000).fadeOut(200);
+});
+$('#archvdalrts').css({'font-weight':'600'}, setTimeout(function() {
+    $('#archvdalrts').css('font-weight','300');
+}, 2000));
+
+console.log('this called');
+
+$('#norch').hide();
+if ($('#alrts').find('tbody').find('tr').length == 1) {
+$('#clr').show();
+}
+else if ($('#alrts').find('tbody').find('tr').length == 9) {
+$('.add').delay(600).show(200);
+setTimeout ( function() {
+$('#add1').remove();
+},600);
+
+}
+else {
+}
+});
+
+$('#add1').click(function() {
+$('.add').delay(600).show(200);
+setTimeout ( function() {
+$('#add1').remove();
+},600);
+});
+
+$('#openrchivd').click(function() {
+$('#rch').toggle();
+console.log('toggle');
+if ($('#rch').find('tr').length == 1) {
+$('#norch').show();
+}
+else {
+}
+
+});
+
+$(function () {
+$('.accordion-toggle').click(function () {
+$(this).siblings().andSelf().css({
+"background-color":"#ededed"
+});
+$(this).closest("table").find('.collapse.in').not(this).collapse('toggle');
+
+$('.accordion-toggle').not(this).addClass('collapsed').attr('aria-expanded','false');
+
+$('#rch').find('p.ck:contains("<i class="fa fa-flag"></i>")').closest('tr').next().prependTo('#flgrchivd');
+$('#rch').find('p.ck:contains("<i class="fa fa-flag"></i>")').closest('tr').prependTo('#flgrchivd');
+$('.table-responsive').find('p.ck:contains("<i class="fa fa-flag"></i>")').closest('tr').next().prependTo('#flgrchivd');
+$('.table-responsive').find('p.ck:contains("<i class="fa fa-flag"></i>")').closest('tr').prependTo('#flgrchivd');
+console.log('flagged');
+
+$('#flgrchivd').find('p.ck:contains("<i class="fa fa-check"></i>")').closest('tr').next().prependTo('.rchivd');
+$('#flgrchivd').find('p.ck:contains("<i class="fa fa-check"></i>")').closest('tr').prependTo('.rchivd');
+$('.table-responsive').find('p.ck:contains("<i class="fa fa-check"></i>")').closest('tr').next().prependTo('.rchivd');
+$('.table-responsive').find('p.ck:contains("<i class="fa fa-check"></i>")').closest('tr').prependTo('.rchivd');
+console.log('checked');
+});
+});
+// Me not me
+$('.me').click(function() {
+$(this).parent().find('h4').replaceWith('<h4>(status) Thank you for your response. We’ll keep an eye on any type of fraudulent activities.</h4>');
+$(this).closest('tr').prev().find('.fa-exclamation-triangle').html('<i class="fa fa-check" style="color:#000;margin-left:20px;"></i>').attr('id', 'chckd');
+});
+$('.notme').click(function() {
+$(this).parent().find('h4').replaceWith('<h4>(status) You responded that this was not applied by you. Please call us (000) 000-0000 and let our restoration specialists to further assist you.</h4>');
+$(this).closest('tr').prev().find('.fa-exclamation-triangle').html('<i class="fa fa-exclamation" style="color:#000;margin-left:20px;"></i>').attr('id', 'flggd');
+});
+
+$('p.ck').click(function() {
+$(this).find('i').toggleClass('on');
+});
+
+
+$(document).ready(function(){
+
+});
+//table pagenation
+
+});
+
+
+
+</script>
+
+</body>
+</html>
